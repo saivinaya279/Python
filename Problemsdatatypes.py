@@ -50,3 +50,39 @@ print(text.count(2))
 text=("sdfgh","sdfghj","rtvb")
 char_list=list(text)
 print(char_list)
+# Dictionary
+# Create a dictionary with 3 key-value pairs and print its type.
+student={"name":"vinaya","Roll No":20,"studendentId":678}
+print(type(student))
+print(student["Roll No"])
+# Add a new key-value pair to a dictionary.
+student["email"]="abc@gmail.com"
+print(student)
+student["Roll No"]="21"
+print(student)
+print(student["email"])
+
+a=int(input())
+print(type(a))
+# Count the number of vowels in a string. 
+text = "Vinaya"
+vowels = "aeiouAEIOU"
+
+count = (
+    text.count("a") +
+    text.count("e") +
+    text.count("i") +
+    text.count("o") +
+    text.count("u") +
+    text.count("A") +
+    text.count("E") +
+    text.count("I") +
+    text.count("O") +
+    text.count("U")
+)
+
+print(count)   
+a=[14,78,90,40,34,76]
+sorted_list=sorted(a)
+print(sorted_list[0])
+print(sorted_list[-1])
