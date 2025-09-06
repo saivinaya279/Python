@@ -40,15 +40,41 @@ b = False
 print(a and b)#True if both statements are the same
 print(a or b)#True if one of the statements is true.
 print(not a)#Reverse the result
-# Comparison Operators
-#  Input two numbers and check if the first is greater than the second.
-a=int(input())
-b=int(input())
-print(a>b)
-# : Input two strings and check if they are equal
-s=input()
-s1=input()
-print(s==s1)
-# Input an age and check if it is greater than or equal to 18
-age=int(input())
-print(age>=18)
+
+# # Python Assignment Operators:=,+=,-=,^ * =,\%=
+# Assignment operators are used to assign values to variables:
+x = 5
+print(x)
+x = 5
+x += 3
+print(x)
+x = 5
+x -= 3
+print(x)
+x = 5
+x *= 3
+print(x)
+x = 5
+x /= 3
+print(x)
+x=5
+x<=3
+print(x)
+x=5
+x%=3
+print(x)
+# Bitwise Operators
+# Python Bitwise operators act on bits and perform bit-by-bit operations. These are used to operate on binary numbers.
+# Bitwise NOT
+# Bitwise Shift
+# Bitwise AND
+# Bitwise XOR
+# Bitwise OR
+a = 10
+b = 4
+print(a & b) #AND → 1 only if both bits are 1
+print(a | b)#OR → 1 if any one bit is 1
+print(~a) #-(a+1)
+print(a ^ b)#XOR → 1 if bits are different
+print(a >> 2)#Right shift moves bits to the right by 2 places.
+print(a << 2)#Left shift moves bits left by 2 places (adds two 0s at right).
