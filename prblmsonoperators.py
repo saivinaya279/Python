@@ -44,7 +44,7 @@ d=bool(int(input()))
 print(c and b)
 print(c or d)
 print(not d)
-# . Input a number and check if it lies between 10 and 20 (inclusive) using logical operators.
+# Input a number and check if it lies between 10 and 20 (inclusive) using logical operators.
 number=int(input())
 print(number>=10 and number<=20)
 # Input three numbers and check if all are positive.
@@ -52,3 +52,25 @@ a=int(input())
 b=int(input())
 c=int(input())
 print(a>0 and b>0 and c>0)
+# Assignment Operators 
+# Input a number and increase it by 10 using +=. Print the result.
+a = int(input())
+a += 10
+print(a)
+# Input a number and reduce it by half using /=. Print the result.
+b = int(input())
+b /= 2
+print(b)
+# Input two integers and print their &, |, and ^.
+a = int(input())
+b = int(input())
+print(a & b)
+print(a | b)
+print(a ^ b)
+# Input an integer and print its left shift by 2 and right shift by 2.
+c = int(input())
+print(c << 2)
+print(c >> 2)
+# 15. Input a number and check if it is odd or even using bitwise & 1.give this answers ..use a,b,c,d only for variables and dont give ay sentences
+d = int(input())
+print("Even" if (d & 1) == 0 else "Odd")
