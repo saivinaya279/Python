@@ -12,7 +12,12 @@ if age >= 18:
 age=22
 if age >18:print("eligible to vote ")
 # If else Conditional Statement
-# When If - Else conditional statement is used, Else block of code executes if the condition is False
+# When If - Else conditional statement is used, Else block of code executes if the condition is False.
+# Syntax:
+# if condition:
+    # Block of code to execute if condition is true
+# else:
+    # Block of code to execute if condition is false
 a = int(input())
 if a > 0:  
     print("Positive")  
@@ -30,6 +35,14 @@ res = "Pass" if marks >= 40 else "Fail"
 print(f"Result: {res}")
 # elif Statement
 # elif statement in Python stands for "else if." It allows us to check multiple conditions, providing a way to execute different blocks of code based on which condition is true. 
+# Syntax:
+# if condition1:
+    # Block of code to execute if condition1 is true
+# elif condition2:
+    # Block of code to execute if condition2 is true
+# else:
+    # Block of code to execute if none of the conditions are true
+    
 a=6
 b=((a*12)==32)
 if b:
@@ -53,6 +66,16 @@ else:
     print("Adult.")
 # Nested if..else Conditional Statement
 # Nested if..else means an if-else statement inside another if statement. We can use nested if statements to check conditions within conditions.
+# if condition1:
+    # if condition2:
+        # Block of code to execute if both conditions are true
+    # else:
+        # Block of code to execute if only condition1 is true
+# else:
+    # if condition2:
+        # Block of code to execute if only condition2 is true
+    # else:
+        # Block of code to execute if both conditions are false
 ge = 70
 is_member = True
 
