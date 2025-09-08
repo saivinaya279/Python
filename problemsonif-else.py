@@ -40,3 +40,27 @@ if(b>=a):
     print("Eligible")
 else:
     print(" not Eligible")
+# Write a program to print the relation between two numbers, X and Y.
+# Input
+# The first line is integer X.
+# The second line is integer Y
+# Output
+# Print XY if X is less than Y otherwise, print X >= Y.
+first_number=int(input())
+second_number=int(input())
+if first_number<second_number:
+    print("X < Y")
+else:
+    print("X >= Y")
+# Write a program to check if the given two numbers are equal.
+# Input
+# The first line of input contains a number.
+# The second line of input contains a number.
+# Output
+# If the given numbers are equal, print "Equal". In all other cases, print "Not Equal".
+a=int(input())
+b=int(input())
+if a==b:
+    print("Equal")
+else:
+    print(" Not Equal")
