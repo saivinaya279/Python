@@ -107,3 +107,25 @@ if aa or bb:
     print("Pair")
 else:
     print("Not a Pair")
+# Input
+# The first line of input contains an integer representing the score
+# The second line of input contains an integer representing the score B
+# Output
+# The output should be a single line containing a string. Can team up should be printed if one of the scores is greater than 300 and the sum of the scores is less than 500, otherwise Cannot team up should be printed.
+playerA=int(input())
+playerB=int(input())
+AA=playerB>300 or playerA>300
+BB=playerA+playerB<500
+if AA and BB:
+    print("Can team up")
+else:
+    print("Cannot team up")
+# Input
+# The input will be a single line containing an integer.
+# Output
+# The output should be a single line containing a string. Zero should be printed if the given number is equal to 0. Positive should be printed if the given number is greater than 0.
+number=int(input())
+if number==0:
+    print("Zero")
+else:
+    print("Positive")
