@@ -64,3 +64,46 @@ if a==b:
     print("Equal")
 else:
     print(" Not Equal")
+# Input
+# The first line of input will contain the length of the box.
+# The second line of input will contain the breadth of the box.
+# Output
+# If the given length and breadth are equal, print "Square". In all other cases, print "Rectangle".
+lenght=int(input())
+breadth=int(input())
+if lenght==breadth:
+    print("Square")
+else:
+    print("Rectangle")
+# Input
+# The input will be a single line containing an integer.
+# Output
+# The output should be a single line containing a string. Eligible should be printed if the age of the person is greater than or equal to 18, otherwise Not Eligible should be printed.
+age=int(input())
+if age>=18:
+    print("Eligible")
+else:
+    print("Not Eligible")
+# Input
+# The input will be a single line containing an integer.
+# Output
+# The output should be a single line containing a string. Can go for a walk should be printed if the temperature is between 15 and 40, otherwise Cannot go for a walk should be printed.
+temper=int(input())
+AA=temper>15 and temper<40
+if AA:
+    print("Can go for a walk" )
+else:
+    print("Cannot go for a walk")
+# Input
+# The first line of input contains an integer representing A
+# The second line of input contains an integer representing B.
+# Output
+# The output should be a single line containing a string. Pair should be printed if both A and B are less than or equal to 1000 or B is greater than 500. Otherwise, Not a Pair should be printed.
+A=int(input())
+B=int(input())
+aa=A<=1000 and B<=1000
+bb=B>500
+if aa or bb:
+    print("Pair")
+else:
+    print("Not a Pair")
