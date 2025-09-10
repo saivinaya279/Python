@@ -129,3 +129,70 @@ if number==0:
     print("Zero")
 else:
     print("Positive")
+
+
+# Input
+# The first line of input contains a string representing S
+# The second line of input contains an integer representing C.
+# Output
+# The output should be a single line containing a string. Buy a Book should be printed if S is equal to large or C is greater than or equal to 300. Otherwise, Do Not Buy a Book should be printed.
+String=input()
+noofpages=int(input())
+if String==("large") or noofpages>=300:
+    print("buy a Book")
+else:
+    print("Do Not Buy a Book")
+# Input
+# The first line of input contains an integer representing the score A
+# The second line of input contains an integer representing the score B
+# Output
+# The output should be a single line containing a string. Can team up should be printed if one of the scores is greater than 300 and the sum of the scores is less than 500, otherwise Cannot team up should be printed.
+A=int(input())
+B=int(input())
+a=B>300 or A>300
+b=A+B<500
+if a and b:
+    print("can team up")
+else:
+    print("cannot team up")
+
+# Write a program that reads a number N and checks if N is greater than 10.
+# Print the result of N + 5 if N is greater than 10. Otherwise, print the result of N + 1
+# Input
+# The input will be a single line containing an integer representing N
+# Output
+# The output should be a single line containing an integer. The result of N + 5 should be printed if N is greater than 10. Otherwise, the result of N + 1 should be printed.
+a=int(input())
+if a>=10:
+    print(a+10)
+else:
+    print(a+1)
+# Input
+# The first line of input contains an integer representing angle A
+# The second line of input contains an integer representing angle B
+# The third line of input contains an integer representing angle C
+# Output
+# The output should be three lines containing a Triangle as shown in the sample output if the sum of A 180. B and C is equal to
+# Otherwise, the output should be a single line containing the string Not a Valid Triangle.
+A=int(input())
+B=int(input())
+C=int(input())
+if A+B+C==180:
+    print("*","**","***")
+else :
+    print("Not valid triangle")
+# Write a program that reads three numbers A B, and C , and checks if each number is greater than 100.
+# Print All are greater than 100 if each number is greater than 100. Otherwise, print Not all are greater than 100.
+# Input
+# The first line of input contains an integer representing A
+# The second line of input contains an integer representing B
+# The third line of input contains an integer representing C
+# Output
+# The output should be a single line containing a string. All are greater than 100 should be printed if each number is greater than 100. Otherwise, Not all are greater than 100 should be printed.
+A=int(input())
+B=int(input())
+C=int(input())
+if A+B+C>100:
+    print("All are greater than 100")
+else:
+    print("Not all are greater than 1000")
