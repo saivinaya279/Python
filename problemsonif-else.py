@@ -178,7 +178,9 @@ A=int(input())
 B=int(input())
 C=int(input())
 if A+B+C==180:
-    print("*","**","***")
+    print("*")
+    print("**")
+    print("***")
 else :
     print("Not valid triangle")
 # Write a program that reads three numbers A B, and C , and checks if each number is greater than 100.
@@ -196,3 +198,41 @@ if A+B+C>100:
     print("All are greater than 100")
 else:
     print("Not all are greater than 1000")
+# A company decided to give a bonus of 5% to an employee if his/her years of service is more than five years.
+# write a program that reads an employee's salary and years of service and decides whether the employee gets the bonus or not.
+# input
+# The first line of input will contain the salary of an employee.
+# The second line of input will contain years of service.
+# Output
+# the employee gets a bonus, print the net bonus amount.
+# the employee doesn't get the bonus, print "No Bonus",.
+salary=int(input())
+exprince=int(input())
+if exprince>5:
+    print(salary*0.05)
+else:
+    print("No Bonus")
+    
+# Write a program that reads two numbers A and B and checks if one of the below conditions is satisfied.
+# One of A and B is equal to 6.
+# The sum of A and B is equal to 6.
+# The difference between A and B is equal to 6.
+# Print Lucky if one of the given conditions is satisfied. Otherwise, print Not Lucky. 
+# Input
+# The first line of input contains an integer representing A
+# The second line of input contains an integer representing B.
+# Output
+# The output should be a single line containing a string. Lucky should be printed if one of the given conditions is satisfied.
+# Otherwise, Not Lucky should be printed.
+    
+A=int(input())
+B=int(input())
+a=A==6 and B == 6
+b=A+B==6
+c=A-B==6 or B-A==6
+if a or b or c:
+    print("Lucky")
+else:
+    print("Not Lucky")
+A=int(input())
+B=int(input())
