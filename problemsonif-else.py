@@ -236,3 +236,51 @@ else:
     print("Not Lucky")
 A=int(input())
 B=int(input())
+# Write a program that reads two numbers A and B, and prints the remainder when A is divided by B
+# Input
+# The first line of input contains an integer representing A.
+# The second line of input contains an integer representing B
+# Output
+# The output should be a single line containing an integer that is the remainder when A is divided by B
+a=int(input())
+b=int(input())
+print(a%b)
+# Solved
+# Write a program that reads a number N and checks if Nis divisible by 2.
+# Print Even if N is divisible by 2. Otherwise, print Odd.
+# Input
+# The input will be a single line containing an integer representing N
+# Output
+# The output should be a single line containing a string. Even should be printed if N is divisible by 2. Otherwise, Odd should be printed.
+N=int(input())
+if N%2==0:
+    print("even")
+else:
+    print("odd")
+    
+# Write a program that reads a number N and finds the,
+# Remainder when N is divided by 4.
+# Remainder when N is divided by 5.
+# Print the greatest remainder among the two remainders when Nis divided by 4 and 5.
+# Input
+# The input will be a single line containing an integer representing N
+# Output
+# The output should be a single line containing an integer that is the greatest remainder among the two remainders when N is divided by 4 and 5.
+N=int(input())
+A=N%4
+B=N%5
+if A>B:
+    print(A)
+else:
+    print(B)
+# Write a program that reads a number N and checks if the remainder is O or 1 when N is divided by 11.
+# Print Special Eleven if the remainder is 0 or 1 when N is divided by 11. Otherwise, print Normal Number.
+# Input
+# The input will be a single line containing an integer representing N.
+# Output
+# The output should be a single line containing a string. Special Eleven should be printed if the remainder is 0 or 1 when N is divided by 11. Otherwise, Normal Number should be printed.
+N=int(input())
+if N%11==0 or N%11==1:
+    print("special Number")
+else:
+    print("Normal Number")
