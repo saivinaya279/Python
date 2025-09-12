@@ -1,3 +1,37 @@
+# You have 17 problems here:
+
+# Divisible by Digits – Check if N is divisible by both its digits, print double if true
+
+# Top Rank Check – Check if rank ≤3 or ≤10
+
+# Box Weight – Print weight category (Heavier/Heavy)
+
+# Leap Year – Check leap year conditions
+
+# Weather Message – Print message based on temperature range
+
+# Exam Permission – Check hall ticket / ID card
+
+# Divisible by 5/10 – Print based on divisibility
+
+# Student Grade – Print A/B/C/F based on marks (⚠️ logic issue: uses or, should use ranges properly)
+
+# Match Result – WIN / DRAW / LOSE based on A & B
+
+# Polygon Name – Print polygon name based on sides
+
+# Leap Year (again) – Duplicate of #4
+
+# Profit/Loss – Compare CP & SP
+
+# Day Name – Print day name based on 1–7
+
+# Calculator – Perform arithmetic operation based on operator
+
+# Sum of Digits – Calculate sum of digits (works for up to 4-digit numbers only)
+
+
+
 # Write a program that reads a two-digit number N and checks if N is divisible by both the digits of N
 # Print the double of N if N is divisible by both the digits of N Otherwise, print N
 # Input
@@ -5,16 +39,16 @@
 # Output
 # The output should be a single line containing an integer. The double of N should be printed if N is divisible by both the digits of N. Otherwise, N should be printed.
 
-# number=input()
-# AA=number[0]
-# BB=number[1]
-# AA=int(AA)
-# BB=int(BB)
-# CC=int(number)%AA==0 and int(number)%BB==0
-# if CC:
-#     print(int(number)*2)
-# else:
-#     print(number)
+number=input()
+AA=number[0]
+BB=number[1]
+AA=int(AA)
+BB=int(BB)
+CC=int(number)%AA==0 and int(number)%BB==0
+if CC:
+    print(int(number)*2)
+else:
+    print(number)
     
     
 
@@ -27,11 +61,11 @@
 # The input will be a single line containing an integer representing R.
 # Output
 # The output should be a single line containing a string. One of Top 3 should be printed if R is less than or equal to 3. Not Top 3 but One of Top 10 should be printed if R is less than or equal to 10
-# R=int(input())
-# if R<=3:
-#     print("One of Top 3")
-# elif R<=10:
-    # print("Not Top 3 but One of Top 10")
+R=int(input())
+if R<=3:
+    print("One of Top 3")
+elif R<=10:
+    print("Not Top 3 but One of Top 10")
     
 # Write a program that reads the weight W of a box in kg and checks,
 # If W is greater than or equal to 100.
@@ -43,11 +77,11 @@
 # Output
 # The output should be a single line containing a string. Box is
 # Heavier should be printed if W is greater than or equal to 100. Box is Heavy should be printed if W is not greater than or equal to 100 but greater than or equal to 30.
-# W=int(input())
-# if W>=100:
-#     print("Box is Heavier")
-# elif W>=30:
-#     print("Box is Heavy")
+W=int(input())
+if W>=100:
+    print("Box is Heavier")
+elif W>=30:
+    print("Box is Heavy")
 # Write a program that reads a year Y and checks if the year Yis a leap year. A year is a leap year if any of the given conditions are satisfied.
 # Y is divisible by 400.
 # .
@@ -59,13 +93,13 @@
 # Y
 # Output
 # The output should be a single line containing a boolean value. True should be printed if any of the given conditions are satisfied.
-# Y=int(input())
-# if Y%400==0:
-#     print("True")
-# elif Y%4==0 and  Y%100!=0:
-#     print("True")
-# else:
-#         print("False")
+Y=int(input())
+if Y%400==0:
+    print("True")
+elif Y%4==0 and  Y%100!=0:
+    print("True")
+else:
+        print("False")
         
 # Write a program to display a customized message based on temperature T
 # Input
@@ -231,3 +265,51 @@ elif AA==4:
     c=int(A[2])
     d=int(A[3])
     print(a+b+c+d)
+# You are given a number a and you have to print your answer according to the following:
+
+# If the number is divisible by 3, you print "Fizz" (without quotes)
+# If the number is divisible by 5, you print "Buzz" (without quotes)
+# If the number is divisible by both 3 and 5, you print "FizzBuzz" (without quotes)
+# In any other case, you print the number itself
+# Note: You should add a new-line character after print statement.
+
+# Examples:
+
+# Input: a = 3
+# Output: Fizz
+# Explanation: Here, the number is divisible by 3, so Fizz is printed.
+# Input: a = 5
+# Output: Buzz
+# Explanation: Here the number is divisible by 5, so Buzz is printed.
+n=int(input())
+if n%3==0 and n%5==0:
+    print("FizzBuzz")
+elif n%3==0:
+    print("Fizz")
+elif n%5==0:
+    print("Buzz")
+else:
+    print(n)
+# Given a number a, you have to use if, elif, else conditional statements according to the following:
+# if number is greater than 100: Print "Big" (without quotes)
+# elif number is smaller than 10: Print "Small" (without quotes)
+# else: Print "Number" (without quotes)
+
+# Examples:
+
+# Input: a = 9
+# Output: Small
+# Explanation: Here, the else if condition will work as 9 is smaller than 10.
+# Input: a = 101
+# Output: Big
+# Explanation: 101 is greater than 100, so our if statement works and we print Big.
+# Input: a = 30
+# Output: Number
+# Explanation: 30 is neither greater than 100, nor smaller than 10, so the else statement works here.
+n=int(input())
+if n>100:
+    print("Big")
+elif n<10:
+    print("Small")
+else:
+    print("Number")
