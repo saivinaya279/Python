@@ -86,4 +86,17 @@ while A<N:
     print(M+1)
     A=A+1
     M=M+1
-    
+# Given a number N, write a program that reads N numbers as input and prints the product of the given N numbers.
+# Input
+# The first line of input contains an integer representing N
+# The next N lines of input contain integers.
+# Output
+A=int(input())
+AA=0
+PR=1
+IN=0
+while AA<A:
+    AA=AA+1
+    IN=int(input())
+    PR=PR*IN
+print(PR)
