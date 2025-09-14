@@ -73,7 +73,6 @@ AA=1
 while AA<=A:
     print(AA**3)
     AA=AA+1
-    """
 # Write a program that reads two numbers M and N and prints N numbers after M.
 # Input
 # The first line of input contains an integer representing M
@@ -100,4 +99,24 @@ while AA<A:
     AA=AA+1
     IN=int(input())
     PR=PR*IN
-print(PR)"""
+print(PR)
+# Write a program that reads a number N and prints the number 0 N times on N lines.
+# Input
+# The input will be a single line containing an integer representing N.
+# Output
+# The output should be N lines containing an integer O on each line.
+A=int(input())
+AA=1
+while AA<=A:
+    print("0")
+    AA=AA+1
+#     Write a program to print integers from 1 to the given integer (N).
+# Input
+# The first line of input will contain a positive integer.
+# Output
+# The output should be of N lines, printing an integer in each line.
+A=int(input())
+AA=0
+while AA<A:
+    print(AA+1)
+    AA=AA+1
