@@ -73,6 +73,7 @@ AA=1
 while AA<=A:
     print(AA**3)
     AA=AA+1
+    """
 # Write a program that reads two numbers M and N and prints N numbers after M.
 # Input
 # The first line of input contains an integer representing M
@@ -99,4 +100,4 @@ while AA<A:
     AA=AA+1
     IN=int(input())
     PR=PR*IN
-print(PR)
+print(PR)"""
