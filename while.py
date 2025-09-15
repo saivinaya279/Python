@@ -76,3 +76,18 @@ AA=0
 while AA<A:
     print(AA+1)
     AA=AA+1
+# Input
+# The first line of input contains an integer representing N
+# The next N lines of input contain integers.
+# Output
+# The output should be the product of the given N inputs.
+A=int(input())
+AA=0
+PR=1
+IN=0
+while AA<A:
+    AA=AA+1
+    IN=int(input())
+    PR=PR*IN
+print(PR)
+    
