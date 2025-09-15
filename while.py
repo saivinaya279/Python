@@ -35,9 +35,44 @@ count=0
 while count < N:
     print(count+1)
     count=count+1
+# Input The first line of input will contain an integer. 
+# The second line of input will contain an integer. 
+# Output The output should be printing an integer in each line, starting from M to N. 
 n=int(input())
 m=int(input())
-count=0
-while count>0:
-    print(m*n)
+count=n
+while count<=m:
+    print(count)
     count=count+1
+# Input
+# The input will be a single line containing an integer representing N
+# # Output
+# The output should be a single line containing a float that is the average of N numbers from 1.
+N=int(input())
+A=1
+sum=0
+while A<=N:
+    sum=sum+A
+    A=A+1
+avg =sum/N
+print(avg)
+# Write a program that reads a number N and prints the number 0 N times on N lines.
+# Input
+# The input will be a single line containing an integer representing N.
+# Output
+# The output should be N lines containing an integer O on each line.
+A=int(input())
+AA=1
+while AA<=A:
+    print("0")
+    AA=AA+1
+#     Write a program to print integers from 1 to the given integer (N).
+# Input
+# The first line of input will contain a positive integer.
+# Output
+# The output should be of N lines, printing an integer in each line.
+A=int(input())
+AA=0
+while AA<A:
+    print(AA+1)
+    AA=AA+1
