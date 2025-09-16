@@ -120,3 +120,15 @@ AA=0
 while AA<A:
     print(AA+1)
     AA=AA+1
+# Write a program that reads a string and prints the first character of the given string on N lines, where N is the length of the given string.
+# Input
+# The input will be a single line containing a string.
+# Output
+# The output should be N lines, with each line containing a string that is the first character of the given string. Here, N is the length of the given string.
+A=input()
+AA=A[0]
+Len=int(len(A))
+Aa=0
+while Aa<Len:
+    Aa=Aa+1 
+    print(AA)
