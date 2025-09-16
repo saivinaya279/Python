@@ -96,9 +96,37 @@ A=1
 while A<=a:
     print(A**3)
     A=A+1
+# given two integers M and N ,write a program to print a solid rectangle pattern of M rows and N columns using the asterisk character (*)
 m=int(input())
 n=int(input())
 count=0
 while count<m:
     print("*"*n)
     count=count+1
+#     Write a program that reads a number N and prints a Square of N rows and N columns using numbers starting from 1.
+# 111
+# 222
+# 333
+# Input
+# The input will be a single line containing an integer representing N
+# Output
+# The output should be N rows containing numbers as a Square shown in the sample output.
+A=int(input())
+Aa=1
+while Aa<=A:
+    row=str(Aa)*A
+    print(row)
+    Aa=Aa+1
+# Input
+# The input will be a single line containing an integer representing N
+# Output
+# The output should be 2* N rows containing numbers as two Right Angled Triangles shown in the sample output.
+A=int(input())
+AA=1 
+while AA<=A:
+    print(str(AA)*AA)
+    AA=AA+1
+AA=1
+while AA<=A:
+    print(str(AA)*AA)
+    AA=AA+1
