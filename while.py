@@ -90,4 +90,15 @@ while AA<A:
     IN=int(input())
     PR=PR*IN
 print(PR)
-    
+# write a program that reads a Number N and prints the cube of N numbers from 1
+a=int(input())
+A=1
+while A<=a:
+    print(A**3)
+    A=A+1
+m=int(input())
+n=int(input())
+count=0
+while count<m:
+    print("*"*n)
+    count=count+1
