@@ -71,6 +71,3 @@ print(a ^ b)
 c = int(input())
 print(c << 2)
 print(c >> 2)
-# 15. Input a number and check if it is odd or even using bitwise & 1.give this answers ..use a,b,c,d only for variables and dont give ay sentences
-d = int(input())
-print("Even" if (d & 1) == 0 else "Odd")
