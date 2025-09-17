@@ -130,3 +130,46 @@ AA=1
 while AA<=A:
     print(str(AA)*AA)
     AA=AA+1
+# Print numbers from 10 to 1 (reverse counting) using a while loop.
+i=10
+while i>=1:
+    print(i)
+    i=i-1
+# Print even numbers from 1 to 20 using a while loop.
+i=2
+while i<=20:
+    print(i)
+    i=i+2
+# Print odd numbers from 1 to 20 using a while loop.
+i=1
+while i<=20:
+    if i %2!=0 :
+        print(i)
+    i=i+1 
+# Print the first 10 multiples of 5 → 5, 10, 15, ..., 50 using a while loop.
+i=1
+while i<=10:
+    print(i*5)
+    i=i+1
+# Take a number n from user and print numbers from 1 to n using a while loop.
+i=1
+n=int(input())
+while i<=n:
+    print(i)
+    i=i+1
+# Take a number n from user and print the sum of numbers from 1 to n using a while loop.
+i=1
+n=int(input())
+while i<=n:
+    total=total+1
+    i=i+1
+print(total)
+# Take a number n from user and print the factorial of n using a while loop.
+n=int(input())
+fact=1
+i=1
+while i<=n:
+    fact=fact*i
+    i=i+1
+print(fact)
+
