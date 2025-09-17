@@ -172,4 +172,26 @@ while i<=n:
     fact=fact*i
     i=i+1
 print(fact)
-
+    AA=AA+1
+#     Write a program to print integers from 1 to the given integer (N).
+# Input
+# The first line of input will contain a positive integer.
+# Output
+# The output should be of N lines, printing an integer in each line.
+A=int(input())
+AA=0
+while AA<A:
+    print(AA+1)
+    AA=AA+1
+# Input
+# The input will be a single line containing an integer representing N
+# Output
+# The output should be a single line containing a float that is the average of N numbers from 1.
+N=int(input())
+A=1
+sum=0
+while A<=N:
+    sum=sum+A
+    A=A+1
+Avg=sum/N
+print(Avg)
