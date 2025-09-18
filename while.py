@@ -172,7 +172,7 @@ while i<=n:
     fact=fact*i
     i=i+1
 print(fact)
-    AA=AA+1
+AA=AA+1
 #     Write a program to print integers from 1 to the given integer (N).
 # Input
 # The first line of input will contain a positive integer.
@@ -195,3 +195,29 @@ while A<=N:
     A=A+1
 Avg=sum/N
 print(Avg)
+# Print the square of numbers from 1 to 10 using a while loop.
+i=1
+while i<=10:
+    print(i**2)
+    i=i+1
+    
+i=1
+while i<=100:
+    if i%7==0:
+        print(i)
+    i=i+1
+# Print numbers from 100 to 1 that are divisible by 7 using a while loop.
+i=1
+while i<=100:
+    if i%7==0:
+        print(i)
+    i=i+1
+""" For numbers → n = n // 10 + count increment
+For strings → just len(string)  """
+# Take a number from user and count how many digits it has using a while loop.
+i=0 
+n=int(input()) 
+while n>i:
+    n=n//10 
+    i=i+1 
+print(i)
