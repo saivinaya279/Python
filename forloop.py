@@ -15,6 +15,7 @@ i=0
 for i in range(0,51,5):
     print(i)
 i=0
+# 
 for i in range(1,51):
     if i%5==0:
         print(i)
@@ -43,5 +44,21 @@ for i in range(1,n+1):
     prod=prod*i
 print(prod)
 # Count how many numbers between 1 and 50 are divisible by 3.
+i=0
+count=0
+for i in range(1,51):
+    if i%3==0:
+        count=count+1
+print(count)
+# Print the square of each number from 1 to 10.
+
+for i in range(1,11):
+    i=i**2
+    print(i)
+    
+
+    
+    
+    
 
     
