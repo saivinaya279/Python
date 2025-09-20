@@ -14,7 +14,6 @@ for i in range(0,21,2):
 i=0
 for i in range(0,51,5):
     print(i)
-i=0
 # 
 for i in range(1,51):
     if i%5==0:
@@ -55,7 +54,50 @@ print(count)
 for i in range(1,11):
     i=i**2
     print(i)
-    
+# Print each character of a string using a for loop. 
+# (Input: "Python" → Output: P y t h o n)
+n = "Python"
+for char in (n):
+    print(char, end=" ")
+# Take a list of numbers and print only the positive numbers.
+n=[-10,50,-20,40,80]
+for i in n:
+    if i>0:
+        print(i)
+# Take a list of numbers and count how many are odd and how many are even.
+even=0
+odd=0
+n=[1,2,3,4,5,7,6,8]
+for i in n:
+    if i %2==0:
+        even=even+1
+    elif i%2==1:
+        odd=odd+1
+print(even)
+print(odd)
+# Calculate the factorial of a number using a for loop.
+n = int(input()
+fact = 1
+for i in range(1, n+1):
+    fact *= i   
+print(fact)
+# Reverse a number using a for loop. (Input: 1234 → Output: 4321)
+n = int(input())
+rev = 0
+original = n  
+for i in str(n):  
+    rev = rev * 10 + int(i)
+print(rev)
+# Print the first N terms of Fibonacci series using a for loop.
+n = int(input())
+a, b = 0, 1
+print( end=" ")
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b  
+
+
+
 
     
     
