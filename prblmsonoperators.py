@@ -71,3 +71,4 @@ print(a ^ b)
 c = int(input())
 print(c << 2)
 print(c >> 2)
+# 
