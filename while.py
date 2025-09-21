@@ -221,3 +221,82 @@ while n>i:
     n=n//10 
     i=i+1 
 print(i)
+n=int(input())
+# Take an integer n as input and reverse its digits using a while loop.
+"""Step 1: Initialization
+
+rev = 0
+
+n = 123
+
+Iteration 1:
+
+digit = n % 10 = 123 % 10 = 3 ✅ (last digit)
+
+rev = rev * 10 + digit = 0 * 10 + 3 = 3
+
+n = n // 10 = 123 // 10 = 12 ✅ (remove last digit)
+
+Iteration 2:
+
+digit = 12 % 10 = 2
+
+rev = 3 * 10 + 2 = 32
+
+n = 12 // 10 = 1
+
+Iteration 3:
+
+digit = 1 % 10 = 1
+
+rev = 32 * 10 + 1 = 321
+
+n = 1 // 10 = 0 → loop stops ✅
+
+📌 Mathematics Behind It
+
+n % 10 → extracts last digit
+
+rev * 10 + digit → shifts rev one place left (like writing a new number) and adds new digit
+
+n // 10 → removes last digit from original number"""
+rev=0
+while n>0:
+    digit=n%10
+    rev=rev*10+digit
+    n=n//10
+print(rev)
+# Take an integer n as input and find the sum of its digits using a while loop.
+n = int(input())
+sum = 0
+while n > 0:
+    digit = n % 10      
+    sum = sum + digit   
+    n = n // 10        
+print(sum)
+
+n=int(input())
+prod=1
+while n>0:
+    digit=n%10
+    prod=prod*digit
+    n=n//10
+print(prod)
+
+# Take an integer n as input and check if it is a palindrome using a while loop.
+
+rev=0
+n=int(input())
+main=n
+while n>0:
+    digit=n%10
+    rev=rev*10+digit
+    n=n//10
+if rev==main:
+    print("true")
+else:
+    print("false")
+# Print numbers from 1 to 10 using a for loop.
+i=0
+for i in range(10):
+    print()
