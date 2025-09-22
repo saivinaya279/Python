@@ -144,3 +144,12 @@ rev = ""
 for i in n:
     rev = i + rev
 print(int(rev))
+n = int(input())
+is_prime = True
+if n < 2:
+    is_prime = False
+for i in range(2, n):
+    if n % i == 0:
+        is_prime = False
+        break
+print("Prime" if is_prime else "Not Prime")
