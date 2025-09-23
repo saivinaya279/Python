@@ -41,4 +41,18 @@ for i in range(r):
     print()
     
     
-# Print a solid square of * with n rows and n columns
+# Print a solid rectangle of * with n rows and n columns
+n = 4
+m = 6
+
+for i in range(n):
+    for j in range(m):
+        print("*", end=" ")
+    print()
+
+n = 5
+# Print a right-angled triangle of * (increasing).
+for i in range(1, n+1):
+    for j in range(i):
+        print("*", end=" ")
+    print()
