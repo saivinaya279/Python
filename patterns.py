@@ -56,9 +56,18 @@ for i in range(1, n+1):
     for j in range(i):
         print("*", end=" ")
     print()
-    # print right-angled triangle 
+# print right-angled triangle 
 n=5
 for i in range(n,0,-1):
     for j in range(i):
         print("*",end=" ")
     print()
+# Print an inverted right-angled triangle aligned to the right
+n=5
+for i in range(n,0,-1):
+    for j in range(n-i):
+        print(" ", end=" ")
+    for k in range(i):
+        print("*",end=" ")
+    print()
+        
