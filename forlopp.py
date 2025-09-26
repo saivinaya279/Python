@@ -153,3 +153,37 @@ for i in range(2, n):
         is_prime = False
         break
 print("Prime" if is_prime else "Not Prime")
+
+li = [[1, 4, 6], [4, 6, 8], [3, 6, 9]]
+
+r = int(input("Enter number of rows: "))
+c = int(input("Enter number of columns: "))
+
+for i in range(r):
+    for j in range(c):
+        print(li[i][j], end=" ")
+    print()  # Newline after each row
+
+# Numbers in decreasing order (inverted triangle):
+
+n = 5
+for i in range(n, 0, -1):
+    for j in range(i, 0, -1):
+        print(j, end=" ")
+    print()
+# Row number repeated in each row:
+
+n = 5
+for i in range(1, n+1):
+    for j in range(i):
+        print(i, end=" ")
+    print()
+# Floyd’s triangle (incrementing numbers across rows):
+
+n = 5
+num = 1
+for i in range(1, n+1):
+    for j in range(i):
+        print(num, end=" ")
+        num += 1
+    print()
