@@ -77,6 +77,7 @@ for i in range(n,0,-1):
     for k in range(i):
         print("*",end=" ")
     print()
+# Full Pyramid (Centered Triangle)
 n=5
 for i in range(1,n+1):
     for j in range(n-i):
@@ -84,6 +85,7 @@ for i in range(1,n+1):
     for k in range(2*i-1):
         print("*",end=" ")
     print()
+    # Inverted Full Pyramid
 n=5
 for i in range(n,0,-1):
     for j in range(n-i):
@@ -91,6 +93,7 @@ for i in range(n,0,-1):
     for k in range(2*i-1):
         print("*",end=" ")
     print()
+# Hollow Rectangle 
 l = 4  
 b = 6  
 
@@ -100,6 +103,7 @@ for i in range(1, l-1):
     print("*" + " " * ((b*2)-3) + "*")
 
 print("* " * b)
+# Hollow Right-Angled Triangle
 n = 5
 for i in range(1, n+1):
     for j in range(1, i+1):
@@ -107,4 +111,40 @@ for i in range(1, n+1):
             print("*", end=" ")
         else:
             print(" ", end=" ")
+    print()
+n=5
+# Numbers in decreasing order (inverted triangle):
+n = 5
+for i in range(n, 0, -1):
+    for j in range(i, 0, -1):
+        print(j, end=" ")
+    print()
+# Row number repeated in each row:
+n = 5
+for i in range(1, n+1):
+    for j in range(i):
+        print(i, end=" ")
+    print()
+# Floyd’s triangle (incrementing numbers across rows):
+n = 5
+num = 1
+for i in range(1, n+1):
+    for j in range(i):
+        print(num, end=" ")
+        num += 1
+    print()
+# Palindromic number triangle:
+n = 5
+for i in range(1, n+1):
+    print(" "*(n-i), end="")
+    for j in range(i, 0, -1):
+        print(j, end="")
+    for j in range(2, i+1):
+        print(j, end="")
+    print()
+# numbers in increasing order starting
+n = 5
+for i in range(1, n+1):
+    for j in range(1, i+1):  # start from 1, go till i
+        print(j, end=" ")
     print()
