@@ -27,3 +27,146 @@ print(a)
 url="https://dfghjk.com"
 is_secure_url=url.startswith("https://")
 print(is_secure_url)
+# str_var.enswith(value)
+gmail="vinaya@gmail.com"
+is_gmail= gmail.endswith("@gmail.com")
+# .upper()
+name="yutyiku"
+print(name.upper())
+name="AGHHEWjkliuy"
+print(name.lower())
+""" Isalpha
+Syntax: str_var.isalpha()
+
+Gives True if all the characters are alphabets. Otherwise, False
+
+"""
+is_alpha = "Rahul".isalpha()
+print(is_alpha)
+""" Isdecimal
+Syntax: str_var.isdecimal()
+
+Gives True if all the characters are decimals. Otherwise, False
+
+"""
+is_decimal = "9876543210".isdecimal()
+print(is_decimal)
+""" Islower
+Syntax: str_var.islower()
+
+Gives True if all letters in the string are in lowercase. Otherwise, False
+"""
+is_lower = "hello ravi!".islower()
+print(is_lower)
+
+""" Isupper
+Syntax: str_var.isupper()
+
+Gives True if all letters in the string are in uppercase. Otherwise, False
+"""
+is_upper = "HELLO RAVI!".isupper()
+print(is_upper)
+"""Isalnum
+Syntax: str_var.isalnum()
+
+Gives True if the string is alphanumeric (a letter or a number). Otherwise, False"""
+is_alnum = "Rahul123".isalnum()
+print(is_alnum)
+# Case Conversion Methods
+""" Capitalize
+Syntax: str_var.capitalize()
+
+Gives a new string after converting the first letter in the string to uppercase and all other letters to lowercase."""
+capitalized = "the Planet Earth".capitalize()
+print(capitalized)
+"""Title
+Syntax: str_var.title()
+
+Gives a new string after converting the first letter of every word to uppercase.
+
+If a word contains a number or a special character, the first letter after that is converted to uppercase. """
+title_case = "the planet earth".title()
+print(title_case)
+""" Swapcase
+Syntax: str_var.swapcase()
+
+Gives a new string after converting the uppercase letters to lowercase and vice-versa."""
+swapped = "mY nAME IS rAVI".swapcase()
+print(swapped)
+# Counting and Searching Methods
+"""Count
+Syntax: str_var.count(str, start_index, end_index)
+
+Here, the start_index and the end_index are optional.
+
+The count() method gives the number of times the specified string str appears in the string. It searches the complete string as default.
+
+If start_index and end_index are provided, it searches between these indices. The end_index is not included."""
+text = "Hello, world!"
+letter_count = text.count("l")
+print(letter_count)
+"""Index
+Syntax: str_var.index(str, start_index, end_index)
+
+Here, the start_index and the end_index are optional.
+
+The index() method gives the index at the first occurrence of the specified string str.
+
+It results in an error if the specified string str is not found.
+
+The index() method searches the complete string as default. If start_index and end_index are provided, it searches between these indices. The end_index is not included."""
+text = "I have a spare key, if I lose my key"
+word_index = text.index("key")
+print(word_index)
+
+
+""" *rIndex*
+Syntax: str_var.rindex(str, start_index, end_index)
+
+Here, the start_index and the end_index are optional.
+
+The rindex() method gives the index at the last occurrence of the specified string str.
+
+It results in an error if the specified string str is not found.
+
+The rindex() method searches the complete string as default. If start_index and end_index are provided, it searches between these indices. The end_index is not included."""
+text = "I have a spare key, if I lose my key"
+word_index = text.rindex("key")
+print(word_index)
+""" *Find*
+Syntax: str_var.find(str, start_index, end_index)
+
+Here, the start_index and the end_index are optional.
+
+The find() method gives the index at the first occurrence of the specified string str.
+
+If the specified string str is not found, it returns -1.
+
+The find() method searches the complete string as default. If start_index and end_index are provided, it searches between these indices. The end_index is not included."""
+
+# It works similarly to the index() method. The only difference is that the index() method results in an error if the specified string is not found, while find() does not.
+text = "I have a spare key, if I lose my key"
+word_index = text.find("key")
+print(word_index)
+# is string not found
+text = "I have a spare key, if I lose my key"
+word_index = text.find("is")
+print(word_index)
+"""rFind
+Syntax: str_var.rfind(str, start_index, end_index)
+
+Here, the start_index and the end_index are optional.
+
+The rfind() method gives the index at the last occurrence of the specified string str.
+
+If the specified string str is not found, it returns -1.
+
+The rfind() method searches the complete string as default. If start_index and end_index are provided, it searches between these indices. The end_index is not included."""
+
+# It works similarly to the rindex() method. The only difference is that the rindex() method results in an error if the specified string is not found, while rfind() does not."""
+text = "I have a spare key, if I lose my key"
+word_index = text.rfind("key")
+print(word_index)
+text = "coo coo coo"
+word_index = text.rfind("co", 3, 10) # (substring,start ,end)
+print(word_index)
