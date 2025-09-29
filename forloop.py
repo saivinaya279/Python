@@ -95,7 +95,29 @@ print( end=" ")
 for i in range(n):
     print(a, end=" ")
     a, b = b, a + b  
-
+# given two integers M and N ,write a program to print sum to the numbers from m to n 
+m=int(input())
+n=int(input())
+sum=0
+for i in range(m,n+1):
+    sum=sum+i
+print(sum)
+# write a program that reads a number N and prints 10 numbers after N
+n=int(input())
+b=0
+for i in range(1,11):
+    b=n+i
+    print(b)
+n=int(input())
+for i in range(1,n+1):
+    char=str(i)
+    row=(char +" ")*i
+    print(row)
+n=int(input())
+for i in range(1,n+1):
+    for j in range(i):
+        print(i,end=" ")
+    print()
 
 
 
