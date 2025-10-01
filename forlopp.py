@@ -187,3 +187,26 @@ for i in range(1, n+1):
         print(num, end=" ")
         num += 1
     print()
+#Inverted Number Pyramid
+n = 5
+for i in range(n, 0, -1):
+    for j in range(1, i+1):
+        print(j, end="")
+    print()
+#Checkerboard Pattern
+n = 5
+for i in range(n):
+    for j in range(n):
+        if (i+j) % 2 == 0:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+#Sum of Digits in Each Row
+n = 5
+for i in range(1, n+1):
+    total = 0
+    for j in range(1, i+1):
+        print(j, end=" ")
+        total += j
+    print("= ", total)
