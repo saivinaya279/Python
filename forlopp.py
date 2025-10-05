@@ -299,3 +299,11 @@ while A<N:
     print(M+1)
     A=A+1
     M=M+1
+
+# Even number
+n = int(input("Enter a number: "))
+
+for i in range(1, n+1):
+    if i % 2 == 0:
+        
+        print(i, end=" ")
