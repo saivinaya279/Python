@@ -32,3 +32,37 @@ b=0
 for i in range(1,11):
     b=n+i
     print(b)
+m=int(input())
+n=int(input())
+for i in range(m,n+1):
+    print(i)
+# given two integers M and N ,write a program to print sum to the numbers from m to n 
+m=int(input())
+n=int(input())
+sum=0
+for i in range(m,n+1):
+    sum=sum+i
+print(sum)
+"""You are given an array nums containing n distinct numbers in the range [0, n].
+Your task is to find the one number missing from this range."""
+from typing import List
+
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        n = len(nums)
+        expectedSum = n * (n + 1) // 2 # this is the formula to find the sum of n natuaral numbers(0 to n)
+        actualSum = sum(nums)   # calculating actuall sum
+        return expectedSum - actualSum
+
+nums = [3, 0, 1,2,5]
+sol = Solution()
+missing = sol.missingNumber(nums)
+print(f"The missing number is: {missing}")
+A=int(input())
+Sum=0
+Avg=1 
+for i in range(1,A+1):
+    i=int(input())
+    Sum=Sum+i
+Avg=Sum/A
+print(Avg)
