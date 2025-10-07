@@ -66,3 +66,16 @@ for i in range(1,A+1):
     Sum=Sum+i
 Avg=Sum/A
 print(Avg)
+# sum of digits
+n=int(input())
+sum=0
+for i in  str(n):
+    sum=sum+int(i)
+print(sum)
+# factorical of numbers
+n=int(input())
+fact=1
+for i in range(1,n+1):
+    fact=fact*i
+print(fact)
+# write a program that reads a number N,and prints the sum of the cubes of numbers from 1 to N
