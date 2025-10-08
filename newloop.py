@@ -78,4 +78,9 @@ fact=1
 for i in range(1,n+1):
     fact=fact*i
 print(fact)
-# write a program that reads a number N,and prints the sum of the cubes of numbers from 1 to N
+# write a program that reads a number N,and prints the sum of the cubes of numbers from 1 to N# Reverse a number using a for loop. (Input: 1234 → Output: 4321)
+n = input()
+rev = ""
+for i in n:
+    rev = i + rev
+print(int(rev))
