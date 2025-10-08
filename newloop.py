@@ -1,4 +1,4 @@
-for i in range(5):
+8for i in range(5):
     for j in range(5):
         print("*",end=" ")
     print()
@@ -97,4 +97,18 @@ n = 5
 for i in range(1, n+1):
     for j in range(i):
         print(i, end=" ")
+    print()
+3. Print pattern of alphabets
+
+
+
+A
+A B
+A B C
+A B C D
+A B C D E
+n = 5
+for i in range(1, n + 1):       # Controls number of rows (1 to 5)
+    for j in range(65, 65 + i): # Controls which alphabets to print in each row
+        print(chr(j), end=" ")
     print()
