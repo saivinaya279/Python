@@ -1,4 +1,4 @@
-8for i in range(5):
+78for i in range(5):
     for j in range(5):
         print("*",end=" ")
     print()
@@ -112,3 +112,21 @@ for i in range(1, n + 1):       # Controls number of rows (1 to 5)
     for j in range(65, 65 + i): # Controls which alphabets to print in each row
         print(chr(j), end=" ")
     print()
+# inverted alphabetical trirangle
+A B C D E 
+A B C D 
+A B C 
+A B 
+A
+n = 5
+for i in range(n, 0, -1):
+    for j in range(65, 65 + i):
+        print(chr(j), end=" ")
+    print()
+#row repeated alphabets 
+n = 5
+for i in range(65, 65 + n):
+    for j in range(65, i + 1):
+        print(chr(i), end=" ")
+    print()
+
