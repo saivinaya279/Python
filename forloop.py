@@ -146,3 +146,7 @@ n = 5
 
 for i in range(1, 11):
     print(n, "x", i, "=", n*i)
+# Nested Loop Example
+for i in range(3):
+    for j in range(3):
+        print(i, j)
