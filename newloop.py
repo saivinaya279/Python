@@ -84,3 +84,17 @@ rev = ""
 for i in n:
     rev = i + rev
 print(int(rev))
+# Numbers in decreasing order (inverted triangle):
+
+n = 5
+for i in range(n, 0, -1):
+    for j in range(i, 0, -1):
+        print(j, end=" ")
+    print()
+# Row number repeated in each row:
+
+n = 5
+for i in range(1, n+1):
+    for j in range(i):
+        print(i, end=" ")
+    print()
