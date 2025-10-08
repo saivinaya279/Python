@@ -141,3 +141,8 @@ class Solution:
         expectedSum = n * (n + 1) // 2
         actualSum = sum(nums)
         return expectedSum - actualSum
+# 6️⃣ Multiplication Table
+n = 5
+
+for i in range(1, 11):
+    print(n, "x", i, "=", n*i)
