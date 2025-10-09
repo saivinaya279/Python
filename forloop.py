@@ -160,3 +160,28 @@ for i in arr:
         max = i
 
 print(max)
+# . Find smallest element
+arr = [3,7,2,9,5]
+min = arr[0]
+
+for i in arr:
+    if i < min:
+        min = i
+
+print(min)
+# 15. Count elements in list
+arr = [1,2,3,4,5]
+count = 0
+
+for i in arr:
+    count += 1
+
+print(count)
+# 16. Sum of elements in list
+arr = [1,2,3,4]
+s = 0
+
+for i in arr:
+    s += i
+
+print(s)
