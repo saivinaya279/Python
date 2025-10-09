@@ -185,3 +185,12 @@ for i in arr:
     s += i
 
 print(s)
+# 4. Find smallest element
+arr = [3,7,2,9,5]
+min = arr[0]
+
+for i in arr:
+    if i < min:
+        min = i
+
+print(min)
