@@ -150,3 +150,13 @@ for i in range(1, 11):
 for i in range(3):
     for j in range(3):
         print(i, j)
+# Find Largest Element in List
+arr = [4, 7, 2, 9, 5]
+
+max = arr[0]
+
+for i in arr:
+    if i > max:
+        max = i
+
+print(max)
