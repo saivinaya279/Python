@@ -139,3 +139,25 @@ for i in range(1, len(s) + 1):
     for j in range(i):
         print(ord(s[j]), end=" ")
     print()
+Check if a String Is a Pangram
+
+Concept
+
+A pangram is a sentence that contains every letter (a–z) at least once, ignoring case and spaces.
+s = "The quick brown fox jumps over the lazy dog"
+
+# Convert to lowercase to handle case-insensitive
+s = s.lower()
+
+alphabets = "abcdefghijklmnopqrstuvwxyz"
+is_pangram = True
+
+for ch in alphabets:
+    if ch not in s:
+        is_pangram = False
+        break
+
+if is_pangram:
+    print("Pangram")
+else:
+    print("Not Pangram")
