@@ -194,3 +194,7 @@ for i in arr:
         min = i
 
 print(min)
+# Print numbers divisible by 3
+for i in range(1,51):
+    if i%3==0:
+        print(i)
