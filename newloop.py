@@ -129,4 +129,13 @@ for i in range(65, 65 + n):
     for j in range(65, i + 1):
         print(chr(i), end=" ")
     print()
+65 
+65 66 
+65 66 67 
+65 66 67 68
+s = "ABCD"
 
+for i in range(1, len(s) + 1):
+    for j in range(i):
+        print(ord(s[j]), end=" ")
+    print()
