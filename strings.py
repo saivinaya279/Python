@@ -176,7 +176,11 @@ print(word_index)
 s = "hello"
 for ch in s:
     print(ch)
+<<<<<<< HEAD
 # Count vowels in a string
+=======
+Count vowels in a string
+>>>>>>> 4b97ca342f20045495d87748ff97d63f4dbbb26a
 
 s = "hello"
 vowels = 0
@@ -184,7 +188,11 @@ for char in s:
     if char in "aeiouAEIOU":
         vowels += 1
 print(vowels)
+<<<<<<< HEAD
 # Count occurrences of a specific character
+=======
+Count occurrences of a specific character
+>>>>>>> 4b97ca342f20045495d87748ff97d63f4dbbb26a
 
 s = "hello"
 count = 0
