@@ -1,4 +1,4 @@
-78for i in range(5):
+for i in range(5):
     for j in range(5):
         print("*",end=" ")
     print()
@@ -64,7 +64,7 @@ fact=1
 for i in range(1,n+1):
     fact=fact*i
 print(fact)
-<<<<<<< HEAD
+
 # write a program that reads a number N,and prints the sum of the cubes of numbers from 1 to N
 n=int(input())
 cube=0
@@ -73,7 +73,7 @@ for i in range(1, n+1):
     cube =cube+cube_num
 print(cube)
     
-=======
+
 # write a program that reads a number N,and prints the sum of the cubes of numbers from 1 to N# Reverse a number using a for loop. (Input: 1234 → Output: 4321)
 n = input()
 rev = ""
@@ -94,7 +94,7 @@ for i in range(1, n+1):
     for j in range(i):
         print(i, end=" ")
     print()
-3. Print pattern of alphabets
+"""3. Print pattern of alphabets
 
 
 
@@ -103,17 +103,17 @@ A B
 A B C
 A B C D
 A B C D E
-n = 5
+n = 5"""
 for i in range(1, n + 1):       # Controls number of rows (1 to 5)
     for j in range(65, 65 + i): # Controls which alphabets to print in each row
         print(chr(j), end=" ")
     print()
-# inverted alphabetical trirangle
+"""# inverted alphabetical trirangle
 A B C D E 
 A B C D 
 A B C 
 A B 
-A
+A"""
 n = 5
 for i in range(n, 0, -1):
     for j in range(65, 65 + i):
@@ -125,22 +125,22 @@ for i in range(65, 65 + n):
     for j in range(65, i + 1):
         print(chr(i), end=" ")
     print()
-65 
+"""65 
 65 66 
 65 66 67 
-65 66 67 68
+65 66 67 68"""
 s = "ABCD"
 
 for i in range(1, len(s) + 1):
     for j in range(i):
         print(ord(s[j]), end=" ")
     print()
-Check if a String Is a Pangram
+"""Check if a String Is a Pangram
 
 Concept
 
 A pangram is a sentence that contains every letter (a–z) at least once, ignoring case and spaces.
-s = "The quick brown fox jumps over the lazy dog"
+s = "The quick brown fox jumps over the lazy dog"""
 
 # Convert to lowercase to handle case-insensitive
 s = s.lower()
@@ -157,4 +157,4 @@ if is_pangram:
     print("Pangram")
 else:
     print("Not Pangram")
->>>>>>> 4b97ca342f20045495d87748ff97d63f4dbbb26a
+
