@@ -43,21 +43,7 @@ sum=0
 for i in range(m,n+1):
     sum=sum+i
 print(sum)
-"""You are given an array nums containing n distinct numbers in the range [0, n].
-Your task is to find the one number missing from this range."""
-from typing import List
 
-class Solution:
-    def missingNumber(self, nums: List[int]) -> int:
-        n = len(nums)
-        expectedSum = n * (n + 1) // 2 # this is the formula to find the sum of n natuaral numbers(0 to n)
-        actualSum = sum(nums)   # calculating actuall sum
-        return expectedSum - actualSum
-
-nums = [3, 0, 1,2,5]
-sol = Solution()
-missing = sol.missingNumber(nums)
-print(f"The missing number is: {missing}")
 A=int(input())
 Sum=0
 Avg=1 
@@ -79,3 +65,10 @@ for i in range(1,n+1):
     fact=fact*i
 print(fact)
 # write a program that reads a number N,and prints the sum of the cubes of numbers from 1 to N
+n=int(input())
+cube=0
+for i in range(1, n+1):
+    cube_num=i**3
+    cube =cube+cube_num
+print(cube)
+    
