@@ -170,3 +170,25 @@ print(word_index)
 text = "coo coo coo"
 word_index = text.rfind("co", 3, 10) # (substring,start ,end)
 print(word_index)
+
+# Print each character of a string
+
+s = "hello"
+for ch in s:
+    print(ch)
+# Count vowels in a string
+
+s = "hello"
+vowels = 0
+for char in s:
+    if char in "aeiouAEIOU":
+        vowels += 1
+print(vowels)
+# Count occurrences of a specific character
+
+s = "hello"
+count = 0
+for char in s:
+    if char == 'l':
+        count += 1
+print(count)
