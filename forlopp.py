@@ -250,12 +250,7 @@ print(PR)
 # The input will be a single line containing an integer representing N.
 # Output
 # The output should be N lines containing an integer O on each line.
-A=int(input())
-AA=1
-while AA<=A:
-    print("0")
-    AA=AA+1
-#     Write a program to print integers from 1 to the given integer (N).
+#    Write a program to print integers from 1 to the given integer (N).
 # Input
 # The first line of input will contain a positive integer.
 # Output
