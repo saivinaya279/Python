@@ -169,14 +169,59 @@ for i in range(1,n+1):
     for j in range(i):
         print(j+1,end=" ")
     print()
+# Square of Stars (solid and hollow).
     
-    
-# Count digits of a number
-n = int(input())
-count = 0
+"""f n = 5, the output should be:
 
-while n > 0:
-    count += 1
-    n //= 10
+*****
+*****
+*****
+*****
+*****"""
 
-print( count)
+
+n=int(input())
+for i in range(n):
+    for j in range(n):
+        print("*",end=" ")
+    print()
+# Write a program to print a hollow square pattern using stars (*).
+"""f n = 5, the output should be:
+
+*****
+*   *
+*   *
+*   *
+*****"""
+""" method-1"""
+n=int(input())
+for i in range(n):
+    for j in range(n):
+        if i==0 or i ==n-1 or j==0 or j==n-1:
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print()
+""" method -2"""
+n=int(input())
+for i in range(n):
+    if i ==0 or i==n-1:
+        print("*" * n)
+    else:
+        print("*" + " " *(n-2) + "*")
+"""Simple Number Pyramid
+
+Each row starts from 1 every time.
+
+Example (n = 5):
+
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5"""
+n=int(input())
+for i in range(1,n+1):
+    for j in range(i):
+        print(j+1,end=" ")
+    print()
