@@ -225,3 +225,50 @@ for i in range(1,n+1):
     for j in range(i):
         print(j+1,end=" ")
     print()
+# first n natural numbers in reverse order.
+""" 5 4 3 2 1"""
+n=int(input())
+for i in range(n,0,-1):
+    print(i,end=" ")
+# Print First n Natural Numbers in a Single Line
+"""If n = 5, the output should be:
+
+1 2 3 4 5"""
+n=int(input())
+for i in range(1,n+1):
+    print(i,end=" ")
+# Print Digits of a Number Separated by Spaces
+"""Example:
+If the input number is 4521, the output should be:
+
+4 5 2 1 """
+n=input()
+for i in n: 
+    print(i,end=" ")
+# Print a Single Asterisk Increasing Series (1 to n)
+"""Example:
+If n = 5, the output should be:
+
+*
+**
+***
+****
+*****"""
+n=int(input())
+for i in range(1,n+1):
+    for j in range(i):
+        print("*",end=" ")
+    print()
+# Print an n × n Matrix of Numbers (Row-wise)
+"""Example:
+If n = 4, the output should be:
+
+1 2 3 4
+1 2 3 4
+1 2 3 4
+1 2 3 4"""
+n=int(input())
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        print(j,end=" ")
+    print()
