@@ -1,4 +1,9 @@
 
+# Print each character of a string
+
+s = "hello"
+for ch in s:
+    print(ch)
 
 #Count vowels in a string
 
@@ -17,3 +22,20 @@ for char in s:
     if char == 'l':
         count += 1
 print(count)
+# Reverse a string
+ch="hello"
+rev=""
+for i in ch:
+    rev=i+rev
+print(rev)
+# Palindrome check
+ch="qewr"
+rev=""
+for i in ch:
+    rev=i+rev
+if ch==rev:
+    print("palindrome")
+else:
+    print("not palindrome")
+
+    
