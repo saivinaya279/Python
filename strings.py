@@ -226,3 +226,52 @@ Raw strings are created by prefixing the string with r or R.
 """
 s1 = r'C:\project\name.py'
 print(s1)
+# Using str.format():The str.format() method provides a more flexible and readable way to format strings compared to the old-style.
+"""Syntax: Use {} as placeholders and call .format() with the variables.
+
+Example:"""
+
+name1 = 'a'
+name2 = 'b'
+name3 = 'c'
+formatted_string = 'welcome {} {} {} to the Python course'.format(name1, name2, name3)
+print(formatted_string)
+# Positional and Keyword Arguments
+name1 = 'a'
+name2 = 'b'
+name3 = 'c'
+formatted_string = 'welcome {0} {1} {2} to the Python course'.format(name1, name2, name3)
+print(formatted_string)
+# Keyword Arguments:
+name1 = 'a'
+name2 = 'b'
+name3 = 'c'
+formatted_string = 'welcome {first} {second} {third} to the Python course'.format(
+    first=name1, second=name2, third=name3)
+print(formatted_string)
+# Modern Formatting with f-strings
+"""f-strings, introduced in Python 3.6, offer the most straightforward and readable way to format strings.
+Syntax: Prefix the string with f and include variables or expressions inside curly braces {}.
+
+Example:"""
+name1 = 'a'
+name2 = 'b'
+name3 = 'c'
+formatted_string = f'welcome {name1} {name2} {name3} to the Python course'
+print(formatted_string)
+"""sing Expressions
+You can include expressions directly within the curly braces.
+
+Example:"""
+a = 10
+b = 20
+formatted_string = f'sum of {a} and {b} is {a + b}'
+print(formatted_string)
+"""Calling Methods
+f-strings allow you to call methods within the curly braces.
+
+Example:"""
+s1 = 'aBc'
+s2 = 'dEf'
+formatted_string = f'lowercase of s1 is {s1.lower()} and uppercase of s2 is {s2.upper()}'
+print(formatted_string)
