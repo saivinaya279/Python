@@ -171,32 +171,58 @@ text = "coo coo coo"
 word_index = text.rfind("co", 3, 10) # (substring,start ,end)
 print(word_index)
 
-# Print each character of a string
+"""ord() and chr() Functions
+The ord() function returns the integer representing the Unicode code point of a given character. Conversely, 
+the chr() function returns the character corresponding to a given integer."""
 
-s = "hello"
-for ch in s:
-    print(ch)
-<<<<<<< HEAD
-# Count vowels in a string
-=======
-Count vowels in a string
->>>>>>> 4b97ca342f20045495d87748ff97d63f4dbbb26a
+print(ord("a"))
+print(ord("A"))
+print(chr(97))
+print(chr(65))
 
-s = "hello"
-vowels = 0
-for char in s:
-    if char in "aeiouAEIOU":
-        vowels += 1
-print(vowels)
-<<<<<<< HEAD
-# Count occurrences of a specific character
-=======
-Count occurrences of a specific character
->>>>>>> 4b97ca342f20045495d87748ff97d63f4dbbb26a
+# String Immutability
+# Strings in Python are immutable, meaning that once a string is created, its characters cannot be changed.
+"""Creating Strings
+Strings can be created using single quotes ', double quotes ", or triple quotes ''' and .''' Triple quotes allow for multi-line strings."""
 
-s = "hello"
-count = 0
-for char in s:
-    if char == 'l':
-        count += 1
-print(count)
+string = "geek"
+print(string)
+print(string[0])
+print(string[-1])
+print(string[1])
+print(string[-2])
+"""Escape Sequences
+  Single Quote (\'):"""
+s = 'welcome to geek\'s course'
+print(s)
+
+"""New Line (\n):
+The \n escape sequence adds a new line.
+
+Example:"""
+s = 'hi\nwelcome to the course'
+print(s)
+
+"""Tab (\t):
+The \t escape sequence adds a tab space.
+Example:"""
+s = 'hi\twelcome to the course'
+print(s)
+
+"""Double Quote (\"):
+To include a double quote inside a string that is enclosed by double quotes, you need to escape it.
+Example:"""
+s = "He said, \"Welcome to the course!\""
+print(s)
+
+"""Backslash (\):
+To include a backslash itself, you need to escape it by using double backslashes.
+Example:"""
+s = 'This is a backslash: \\'
+print(s)
+
+"""Creating Raw Strings
+Raw strings are created by prefixing the string with r or R.
+"""
+s1 = r'C:\project\name.py'
+print(s1)
