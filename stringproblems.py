@@ -38,4 +38,10 @@ if ch==rev:
 else:
     print("not palindrome")
 
-    
+# Write a Python program to remove all spaces from a given string.
+s=" h e l l o"
+result=""
+for ch in s:
+    if ch!=" ":
+        result+= ch
+print(result)
