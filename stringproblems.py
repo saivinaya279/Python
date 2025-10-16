@@ -46,13 +46,13 @@ for ch in s:
         result+= ch # add to the result
 print(result)
 
-s="I love Python"
-b="python"
-c="java"
-for ch in s:
-    if b==len(s):
-        b=c
-    print(b)
+# s="I love Python"
+# b="python"
+# c="java"
+# for ch in s:
+#     if b==len(s):
+#         b=c
+#     print(b)
 """Given a string and a word, check whether the string starts with or ends with that particular word.
 
 Example:
@@ -80,4 +80,43 @@ elif end:
 else:
     print("not ")
 
+        
+"""Given a sentence, write a program to capitalize the first letter of the sentence while keeping the rest of the characters unchanged.
+
+Example:
+Input: "hello world"
+Output: "Hello world" """
+s=input()
+result=""
+for i in range(len(s)):
+    if i==0:
+        result+=s[i].upper()
+    else:
+        result+=s[i]
+print(result)
+# direct
+# s=input()
+# s[0].upper+s[1:]
+# print(s)
+"""Given a sentence, count how many times each word appears in it and display the frequency of every word.
+
+Example:
+Input: "apple banana apple orange banana apple"
+Output:
+
+apple → 3  
+banana → 2  
+orange → 1"""
+s=input()
+words=s.split()
+counted=[]
+for i in range(len(words)):
+    word=words[i]
+    if word not in counted:
+        count=0
+        for j in range(len(words)):
+            if words[j]==word:
+                count+=1
+        print( f"{word} ,{count}")
+        counted.append(word)
         
