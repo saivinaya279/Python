@@ -22,13 +22,13 @@ for char in s:
     if char == 'l':
         count += 1
 print(count)
-# Reverse a string
+# 1. Reverse a string
 ch="hello"
 rev=""
 for i in ch:
     rev=i+rev
 print(rev)
-# Palindrome check
+# 2.Palindrome check
 ch="qewr"
 rev=""
 for i in ch:
@@ -38,7 +38,7 @@ if ch==rev:
 else:
     print("not palindrome")
 
-# Write a Python program to remove all spaces from a given string.
+# 3.Write a Python program to remove all spaces from a given string.
 s=" h e l l o"
 result=""
 for ch in s:
@@ -53,7 +53,7 @@ print(result)
 #     if b==len(s):
 #         b=c
 #     print(b)
-"""Given a string and a word, check whether the string starts with or ends with that particular word.
+""" 4.Given a string and a word, check whether the string starts with or ends with that particular word.
 
 Example:
 Input: "Hello world", word = "Hello"
@@ -81,7 +81,7 @@ else:
     print("not ")
 
         
-"""Given a sentence, write a program to capitalize the first letter of the sentence while keeping the rest of the characters unchanged.
+"""5.Given a sentence, write a program to capitalize the first letter of the sentence while keeping the rest of the characters unchanged.
 
 Example:
 Input: "hello world"
@@ -98,7 +98,7 @@ print(result)
 # s=input()
 # s[0].upper+s[1:]
 # print(s)
-"""Given a sentence, count how many times each word appears in it and display the frequency of every word.
+"""6.Given a sentence, count how many times each word appears in it and display the frequency of every word.
 
 Example:
 Input: "apple banana apple orange banana apple"
@@ -119,30 +119,4 @@ for i in range(len(words)):
                 count+=1
         print( f"{word} ,{count}")
         counted.append(word)
-"""Given a string and a word, check whether the string starts with or ends with that particular word.
-
-Example:
-Input: "Hello world", word = "Hello"
-Output: String starts with 'Hello'
-
-Input: "Hello world", word = "world"
-Output: String ends with 'world'"""
-s=input()
-word=input()
-start= True
-for i in range(len(word)):
-    if s[i]!=word[i]:
-        start=False
-        break
-end= True
-for i in range(1,len(word)+1):
-    if s[-i]!=word[-i]:
-        end=False
-        break
-if start:
-    print("start")
-elif end:
-    print("end")
-else:
-    print("not ")
         
