@@ -119,4 +119,57 @@ for i in range(len(words)):
                 count+=1
         print( f"{word} ,{count}")
         counted.append(word)
-        
+"""Problem Statement: Count Consonants
+
+Given a string s, write a program to count the total number of consonants present in the string.
+
+A consonant is any alphabetic character that is not a vowel (i.e., not ‘a’, ‘e’, ‘i’, ‘o’, or ‘u’).
+You should consider both uppercase and lowercase letters.
+
+Example 1:
+
+Input:
+s = "Hello World"
+
+Output:
+7
+
+Explanation:
+The consonants are: H, l, l, W, r, l, d → total 7."""
+s=input()
+a=['A','E','I','O','U','a','e','o','i','u']
+count=0
+for ch in s:
+    if ch.isalpha() and ch not in  a:
+        count+=1
+print(count)
+"""Problem Statement: Find All Occurrences of a Substring
+
+Given two strings, s (the main string) and sub (the substring), write a program to find all the starting indices where the substring sub occurs in s.
+
+The search should be case-sensitive and should include overlapping occurrences.
+
+Example 1:
+
+Input:
+s = "ABCDCDC"
+sub = "CDC"
+
+Output:
+[2, 4]
+
+Explanation:
+The substring "CDC" appears starting at indices 2 and 4 in the main string "ABCDCDC"."""
+
+s = input()
+ss = input()
+
+found = False
+
+for i in range(len(s) - len(ss) + 1):
+    if s[i:i+len(ss)] == ss:
+        print(i)
+        found = True
+
+if not found:
+    print("Substring not found")
