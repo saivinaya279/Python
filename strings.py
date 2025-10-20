@@ -275,3 +275,22 @@ s1 = 'aBc'
 s2 = 'dEf'
 formatted_string = f'lowercase of s1 is {s1.lower()} and uppercase of s2 is {s2.upper()}'
 print(formatted_string)
+"""Checking Substrings using in Operator
+The in operator is used to check if a substring exists within another string. It returns True if the substring is found, otherwise False.
+
+Example:
+"""
+s1 = "geeksforgeeks"
+s2 = "geeks"
+
+print(s2 in s1)
+print(s2 not in s1)
+# String Concatenation using + Operator
+"""String concatenation is the process of joining two or more strings end-to-end using the + operator."""
+s1 = "geeks"
+s2 = "forgeeks"
+
+s3 = s1 + s2
+s4 = "Welcome to " + s1 + s2
+print(s3)
+print(s4)
