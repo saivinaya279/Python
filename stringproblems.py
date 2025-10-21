@@ -1,4 +1,17 @@
-3
+# Print each character of a string
+
+s = "hello"
+for ch in s:
+    print(ch)
+
+#Count vowels in a string
+
+s = "hello"
+vowels = 0
+for char in s:
+    if char in "aeiouAEIOU":
+        vowels += 1
+print(vowels)3
 # Print each character of a string
 
 s = "hello"
