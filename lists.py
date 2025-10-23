@@ -12,15 +12,15 @@ mixed = ["hello", 5, True, 3.14]
 # You can also use negative indexing (last element → index -1).
 
 fruits = ["apple", "banana", "cherry"]
-print(fruits[0])   # apple
-print(fruits[-1])  # cherry
+print(fruits[0])   
+print(fruits[-1])  
 # Modifying & Deleting
 # 
 # Lists are mutable — you can change or remove elements.
 
-fruits[1] = "mango"      # update
-print(fruits)            # ['apple', 'mango', 'cherry']
-
+fruits[1] = "mango"      
+print(fruits)            
+# delete
 del fruits[2]            # delete using del
 print(fruits)    
 # List creation + indexing.
@@ -56,3 +56,10 @@ print(fruits)
 #  Length of List
 subjects = ["Math", "Science", "English", "History", "Civics"]
 print(len(subjects))
+#  len() gives the total number of elements in the list.
+# Combine Lists
+a = [1, 2, 3]
+b = [4, 5, 6]
+combined = a + b
+print(combined)
+# ️ Slicing Trick
