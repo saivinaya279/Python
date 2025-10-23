@@ -63,3 +63,6 @@ b = [4, 5, 6]
 combined = a + b
 print(combined)
 # ️ Slicing Trick
+nums = [5, 10, 15, 20, 25, 30]
+print(nums[::2])
+#  [::2] → step of 2, so it picks every second element starting from index 0.
