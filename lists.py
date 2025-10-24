@@ -66,4 +66,11 @@ print(combined)
 nums = [5, 10, 15, 20, 25, 30]
 print(nums[::-1])
 #  [::2] → step of 2, so it picks every second element starting from index 0.
-
+#  Reverse a list without using reverse() or slicing
+""" nums=[1,2,3,4,5]
+output=[5,4,3,2,1]"""
+nums = [1, 2, 3, 4, 5]
+rev = []
+for i in nums:
+    rev.insert(0, i)
+print(rev)
