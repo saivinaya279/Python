@@ -33,3 +33,35 @@ for i in a:
     if i not in b:
         b.append(i)
 print(b)
+
+# remove duplicates from a list
+a=[7,4,6,8,4,5,7]
+b=[]
+for i in a:
+    if i not in b:
+        b.append(i)
+print(b)
+
+# remove duplicates from a list
+a=[7,4,6,8,4,5,7]
+b=[]
+for i in a:
+    if i not in b:
+        b.append(i)
+print(b)
+
+# remove duplicates from a list
+a=[7,4,6,8,4,5,7]
+b=[]
+for i in a:
+    if i not in b:
+        b.append(i)
+print(b)
+# remove duplicates from a list
+a=[7,4,6,8,4,5,7]
+b=[]
+for i in a:
+    if i not in b:
+        b.append(i)
+print(b)
+
