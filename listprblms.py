@@ -1,4 +1,4 @@
-Smallest element
+5Smallest element
 
 a=[3,5,2,8,1]
 min_num=a[0]
@@ -93,3 +93,15 @@ for i in a:
     else:
         zero+=1
 print(pos,neg,zero)
+# Separate even and odd numbers
+
+a=[1,2,3,4,5,6,7]
+even=[]
+odd=[]
+for i in a:
+    if i%2==0:
+        even.append(i)
+    else:
+        odd.append(i)
+print(even)
+print(odd)
