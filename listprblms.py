@@ -79,3 +79,17 @@ for i in a:
     if i<min_num:
         min_num=i
 print(min_num)
+#Count positive, negative, and zero
+
+a=[-2,0,5,-1,0,3]
+pos=0
+neg=0
+zero=0
+for i in a:
+    if i>0:
+        pos+=1
+    elif i<0:
+        neg+=1
+    else:
+        zero+=1
+print(pos,neg,zero)
