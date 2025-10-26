@@ -1,4 +1,11 @@
-""" nums=[1,2,3,4,5]
+Smallest element
+
+a=[3,5,2,8,1]
+min_num=a[0]
+for i in a:
+    if i<min_num:
+        min_num=i
+print(min_num)""" nums=[1,2,3,4,5]
 output=[5,4,3,2,1]"""
 nums = [1, 2, 3, 4, 5]
 rev = []
@@ -64,4 +71,11 @@ for i in a:
     if i not in b:
         b.append(i)
 print(b)
+#Smallest element
 
+a=[3,5,2,8,1]
+min_num=a[0]
+for i in a:
+    if i<min_num:
+        min_num=i
+print(min_num)
