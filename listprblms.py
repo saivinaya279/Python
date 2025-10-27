@@ -108,3 +108,12 @@ for i in a:
         odd.append(i)
 print(even)
 print(odd)
+#  Count how many times a specific number appears in a list
+sentences=["hjk jkl trewq dfgb utr","erfghj jkloi uytr erty uoyuk","oioiiuy rew rty dswe 2qwasd rewqASZ TYREWQX"]
+max_words=0
+for sentence in sentences:
+    word_count = len(sentence.split())
+    if word_count > max_words:
+        max_words = word_count
+print(max_words)
+        
