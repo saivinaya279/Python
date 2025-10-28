@@ -141,4 +141,21 @@ for i in a:
     total += i
 avg = total / len(a)
 print(avg)
+# Print only even numbers from a list
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+for i in a:
+    if i % 2 == 0:
+        print(i)
+# Create a list of squares of numbers from 1 to 10
+
+squares = []
+for i in range(1, 11):
+    squares.append(i * i)
+print(squares)
+# Concatenate two lists and print the result
+
+a = [1, 2, 3]
+b = [4, 5, 6]
+c = a + b
+print(c)
 
