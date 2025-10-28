@@ -108,7 +108,7 @@ for i in a:
         odd.append(i)
 print(even)
 print(odd)
-#  Count how many times a specific number appears in a list
+#  Count how many times a specific number appears in a list.
 sentences=["hjk jkl trewq dfgb utr","erfghj jkloi uytr erty uoyuk","oioiiuy rew rty dswe 2qwasd rewqASZ TYREWQX"]
 max_words=0
 for sentence in sentences:
@@ -116,4 +116,29 @@ for sentence in sentences:
     if word_count > max_words:
         max_words = word_count
 print(max_words)
-        
+
+# Count how many times a specific number appears in a list.
+a = [1, 2, 3, 2, 4, 2, 5]
+num = 2
+count = 0
+for i in a:
+    if i == num:
+        count += 1
+print(count)
+
+# Check if an element exists in a list (take input from user).
+a = [10, 20, 30, 40, 50]
+x = int(input("Enter element: "))
+if x in a:
+    print("Exists")
+else:
+    print("Not exists")
+    
+# Find the average of numbers in a list.
+a = [10, 20, 30, 40, 50]
+total = 0
+for i in a:
+    total += i
+avg = total / len(a)
+print(avg)
+
