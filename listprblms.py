@@ -158,5 +158,19 @@ a = [1, 2, 3]
 b = [4, 5, 6]
 c = a + b
 print(c)
-# 2.Sort a list in ascending and descending order without using sort().
 
+# Take a string input and convert it into a list of characters.
+string = input()
+char_list = []
+for ch in string:
+    char_list.append(ch)
+print(char_list)
+# Count how many elements in a list are greater than a given number (without using statements)
+numbers = [10, 25, 30, 45, 5, 60]
+n = int(input("Enter a number: "))
+count = 0
+
+for num in numbers:
+    count += num > n
+
+print("Count of elements greater than", n, "is:", count)
