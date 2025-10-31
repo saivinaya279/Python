@@ -174,3 +174,25 @@ for num in numbers:
     count += num > n
 
 print("Count of elements greater than", n, "is:", count)
+	# Count how many elements in a list are greater than a given number.
+lst = [2, 8, 5, 12, 3, 10]
+n = 6
+count = 0
+for i in lst:
+    if i > n:
+        count += 1
+print(count)
+
+# Replace all negative numbers in a list with 0.
+lst = [3, -2, 5, -7, 9]
+for i in range(len(lst)):
+    if lst[i] < 0:
+        lst[i] = 0
+print(lst)
+
+# Print the list in reverse order using a loop.
+lst = [1, 2, 3, 4, 5]
+rev = []
+for i in lst:
+    rev = [i] + rev
+print(rev)
