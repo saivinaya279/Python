@@ -196,3 +196,9 @@ rev = []
 for i in lst:
     rev = [i] + rev
 print(rev)
+a=[3,5,2,8,1]
+min_num=a[0]
+for i in a:
+    if i<min_num:
+        min_num=i
+print(min_num)
