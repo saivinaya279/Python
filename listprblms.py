@@ -221,3 +221,10 @@ for i in num:
         odd+=1
 print(even)
 print(odd)
+
+# Length of list without using len()
+nums=[5,8,2,6,9]
+count=0
+for _ in nums:
+    count+=1
+print(count)
