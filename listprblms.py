@@ -211,7 +211,7 @@ print("Sum:", total)
 print("Average:", avg)
 
 # Count even and odd numbers
-num=[10, 15, 20, 25, 30]
+num=[10,15,20,25,30]
 even=0
 odd=0
 for i in num:
