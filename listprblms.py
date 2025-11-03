@@ -228,3 +228,10 @@ count=0
 for _ in nums:
     count+=1
 print(count)
+
+# Replace all negative numbers with 0
+num=[4,-3,7,-1,0,-9]
+for i in range(len(num)):
+    if num[i]<0:
+        num[i]=0
+print(num)
