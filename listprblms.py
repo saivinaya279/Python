@@ -235,3 +235,8 @@ for i in range(len(num)):
     if num[i]<0:
         num[i]=0
 print(num)
+
+# Print list in reverse order using loop
+num=[1,2,3,4,5]
+for i in range(len(num)-1,-1,-1):
+    print(num[i])
