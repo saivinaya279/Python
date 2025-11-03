@@ -209,3 +209,15 @@ total = sum(nums)
 avg = total / len(nums)
 print("Sum:", total)
 print("Average:", avg)
+
+# Count even and odd numbers
+num=[10, 15, 20, 25, 30]
+even=0
+odd=0
+for i in num:
+    if i%2==0:
+        even+=1
+    else:
+        odd+=1
+print(even)
+print(odd)
