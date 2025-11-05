@@ -1,0 +1,61 @@
+# Here’s a clear and complete explanation of Tuples in Python 👇
+
+#  Concept of Tuple in Python
+# 🔹 Definition
+
+# A tuple is an ordered, immutable (cannot be changed) collection of items in Python.
+# It is used to store multiple items in a single variable, similar to a list — but once created, you can’t modify it.
+
+# Syntax
+# my_tuple = (1, 2, 3)
+
+
+# ✅ You can also create a tuple without parentheses:
+
+# my_tuple = 1, 2, 3
+
+
+# ✅ For a single-element tuple, you must include a comma:
+
+# single = (5,)   # ✅ Tuple
+# not_tuple = (5) # ❌ Just an integer
+
+""" Characteristics of Tuples
+# Property	Description
+# Ordered	Elements have a defined order (index starts from 0).
+# Immutable	You cannot modify (add, change, or delete) items after creation.
+# Allow duplicates	Tuples can contain duplicate values.
+# Can contain different data types	Numbers, strings, lists, etc."""
+# Tuple Example
+# student = ("Vinaya", 21, "Data Science", 8.7)
+# print(student)
+
+
+# Output:
+
+# ('Vinaya', 21, 'Data Science', 8.7)
+
+# Accessing Elements
+
+# You can use indexing and slicing just like lists:
+
+# t = (10, 20, 30, 40, 50)
+
+# print(t[0])    # 10
+# print(t[-1])   # 50
+# print(t[1:4])  # (20, 30, 40)
+
+""""Tuple Operations
+# Operation	Example	Output
+# Concatenation	(1,2) + (3,4)	(1, 2, 3, 4)
+# Repetition	(1,2) * 3	(1, 2, 1, 2, 1, 2)
+# Membership	3 in (1,2,3)	True
+# Length	len((1,2,3))	3"""
+
+"""Tuple Functions
+# Function	Description	Example
+# len()	Number of items	len(t)
+# max()	Maximum value	max((1,5,2)) → 5
+# min()	Minimum value	min((1,5,2)) → 1
+# sum()	Sum of elements	sum((1,2,3)) → 6
+# # tuple()	Converts list/string → tuple	tuple([1,2,3])"""
