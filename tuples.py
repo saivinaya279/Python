@@ -59,3 +59,85 @@
 # min()	Minimum value	min((1,5,2)) → 1
 # sum()	Sum of elements	sum((1,2,3)) → 6
 # # tuple()	Converts list/string → tuple	tuple([1,2,3])"""
+# """Tuple Packing and Unpacking""
+
+# Packing:
+
+person = ("Vinaya", 21, "Analyst")
+
+
+# Unpacking:
+
+
+name, age, role = person
+print(name)  # Vinaya
+print(age)   # 21
+print(role)  # Analysts
+"""Nested Tuples
+
+Tuples can contain other tuples:"""
+
+nested = ((1, 2), (3, 4), (5, 6))
+print(nested[1][0])  # 3"""
+t=(20,30,40,50)
+print(sum(t))
+# Create a tuple with 5 different numbers and print it.
+
+t = (10, 20, 30, 40, 50)
+print(t)
+# rint the first and last elements of a tuple.
+
+t = (1, 2, 3, 4, 5)
+print("First:", t[0])
+print("Last:", t[-1])
+# Print a subtuple from index 1 to 3.
+
+t = (10, 20, 30, 40, 50)
+print(t[1:4])
+# Join two tuples and print the result.
+
+t1 = (1, 2, 3)
+t2 = (4, 5, 6)
+t3 = t1 + t2
+print(t3)
+# Repeat a tuple 3 times.
+
+t = (5, 10)
+print(t * 3)
+# Check if 30 exists in a tuple.
+
+t = (10, 20, 30, 40)
+if 30 in t:
+    print("yes")
+else:
+    print("NO")
+# Find length of a tuple
+t = (1, 2, 3, 4, 5)
+print(len(t))
+# Count how many times 2 appears.
+
+t = (1, 2, 3, 2, 4, 2)
+print(t.count(2))
+# Find maximum and minimum elements
+t = (4, 7, 1, 9, 3)
+print(max(t))
+print(min(t))
+# Print all elements greater than 25.
+
+t = (10, 20, 30, 40, 50)
+for i in t:
+    if i > 25:
+        print(i)
+# Create a tuple of 5 city names and print it.
+cities = ("Vizag", "Hyderabad", "Bangalore", "Chennai", "Mumbai")
+print(cities)
+# Create a tuple with numbers from 1 to 10 and print the first element.
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+print (numbers[0])
+
+# Print the last element of a tuple (10, 20, 30, 40, 50).
+t = (10, 20, 30, 40, 50)
+print(t[-1])
+# Print elements from index 1 to 3 from the tuple (5, 10, 15, 20, 25).
+t = (5, 10, 15, 20, 25)
+print(t[1:4])
