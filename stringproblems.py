@@ -186,3 +186,25 @@ for i in range(len(s) - len(ss) + 1):
 
 if not found:
     print("Substring not found")
+    
+#  Given two strings s and t, determine if they are isomorphic.
+# Two strings s and t are isomorphic if the characters in s can be replaced to get t.   # 
+class Solution:
+    def isIsomorphic(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
+
+        map_s_t = {}
+        map_t_s = {}
+
+        for char_s, char_t in zip(s, t):
+            if char_s in map_s_t and map_s_t[char_s] != char_t:
+                return False
+            if char_t in map_t_s and map_t_s[char_t] != char_s:
+                return False
+            map_s_t[char_s] = char_t
+            map_t_s[char_t] = char_s
+
+        return True
+
+        
