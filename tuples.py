@@ -141,3 +141,15 @@ print(t[-1])
 # Print elements from index 1 to 3 from the tuple (5, 10, 15, 20, 25).
 t = (5, 10, 15, 20, 25)
 print(t[1:4])
+nums = (10, 25, 3, 48, 15)
+largest = nums[0]
+smallest = nums[0]
+
+for n in nums:
+    if n > largest:
+        largest = n
+    if n < smallest:
+        smallest = n
+
+print("Largest:", largest)
+print("Smallest:", smallest)
