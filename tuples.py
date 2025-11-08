@@ -142,6 +142,7 @@ print(t[-1])
 t = (5, 10, 15, 20, 25)
 print(t[1:4])
 nums = (10, 25, 3, 48, 15)
+# Find largest and smallest number without using min()/max()
 largest = nums[0]
 smallest = nums[0]
 
@@ -153,3 +154,16 @@ for n in nums:
 
 print("Largest:", largest)
 print("Smallest:", smallest)
+# Check if two tuples are equal.
+t1 = (1, 2, 3)
+t2 = (1, 2, 3)
+t3 = (3, 2, 1)
+
+print(t1 == t2)  
+print(t1 == t3)
+# Combine two tuples and display sorted result.
+t1 = (9, 1, 4)
+t2 = (5, 7, 2)
+merged = tuple(sorted(t1 + t2))
+print(merged)
+
