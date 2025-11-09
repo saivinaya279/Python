@@ -6,7 +6,7 @@ print(a[1:6:3])
 print(part)
 """ isdigit(), .strip(),.lower,.upper(),.startwith() .endswith,.replace()
  """
-pin="457a677"
+pin="4576"
 is_digit=pin.isdigit()
 is_4_digit=(len(pin)==4)
 is_valid=is_digit and is_4_digit
@@ -41,7 +41,7 @@ Syntax: str_var.isalpha()
 Gives True if all the characters are alphabets. Otherwise, False
 
 """
-is_alpha = "Rahul".isalpha()
+is_alpha = "Rahul1".isalpha()
 print(is_alpha)
 """ Isdecimal
 Syntax: str_var.isdecimal()
