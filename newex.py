@@ -13,3 +13,10 @@ rev = []
 for i in nums:
     rev.insert(0, i)
 print(rev)
+# find the largest number in a list
+a=[8,4,5,7,9]
+max_num=a[0]
+for i in a:
+    if i>max_num:
+        max_num=i    
+print(max_num)
