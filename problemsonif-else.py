@@ -298,3 +298,12 @@ total = 0
 for digit in str(num):
     total += int(digit)
 print(total)
+
+# Count Vowels in a String
+text = input("Enter text: ")
+vowels = "aeiouAEIOU"
+count = 0
+for ch in text:
+    if ch in vowels:
+        count += 1
+print("Number of vowels:", count)
