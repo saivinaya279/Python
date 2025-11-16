@@ -292,3 +292,9 @@ if num % 2 == 0:
 else:
     print("Odd number")
     
+Sum of Digits
+num = int(input("Enter a number: "))
+total = 0
+for digit in str(num):
+    total += int(digit)
+print("Sum of digits:", total)
