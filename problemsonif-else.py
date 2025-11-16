@@ -285,8 +285,8 @@ if N%11==0 or N%11==1:
 else:
     print("Normal Number")
 
-Even or Odd
-num = int(input("Enter a number: "))
+# Even or Odd
+num = int(input())
 if num % 2 == 0:
     print("Even number")
 else:
