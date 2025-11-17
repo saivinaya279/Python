@@ -300,10 +300,10 @@ for digit in str(num):
 print(total)
 
 # Count Vowels in a String
-text = input("Enter text: ")
+text = input()
 vowels = "aeiouAEIOU"
 count = 0
 for ch in text:
     if ch in vowels:
         count += 1
-print("Number of vowels:", count)
+print(count)
