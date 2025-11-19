@@ -325,3 +325,10 @@ a,b=0,1
 for i in range(n):
     print(a, end=" ")
     a,b=b,a+b
+    
+Reverse a String
+s = input("Enter string: ")
+rev = ""
+for ch in s:
+    rev = ch + rev
+print("Reversed:", rev)
