@@ -81,3 +81,8 @@ count = (
     text.count("U")
 )
 
+print(count)   
+a=[14,78,90,40,34,76]
+sorted_list=sorted(a)
+print(sorted_list[0])
+print(sorted_list[-1])
