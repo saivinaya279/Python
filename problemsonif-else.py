@@ -284,8 +284,3 @@ if N%11==0 or N%11==1:
     print("special Number")
 else:
     print("Normal Number")
-N=int(input())
-if N%11==0 or N%11==1:
-    print("special Number")
-else:
-    print("Normal Number")
