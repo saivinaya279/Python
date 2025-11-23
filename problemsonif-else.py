@@ -339,4 +339,4 @@ max_num = lst[0]
 for x in lst:
     if x > max_num:
         max_num = x
-print("Max:", max_num)
+print(max_num)
