@@ -332,3 +332,11 @@ rev = ""
 for ch in s:
     rev = ch + rev
 print("Reversed:", rev)
+
+. Max in List
+lst = [3, 7, 2, 9, 5]
+max_num = lst[0]
+for x in lst:
+    if x > max_num:
+        max_num = x
+print("Max:", max_num)
