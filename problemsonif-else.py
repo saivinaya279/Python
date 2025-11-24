@@ -341,7 +341,7 @@ for x in lst:
         max_num = x
 print(max_num)
 
-Remove Duplicates
+# Remove Duplicates
 lst = [1, 2, 2, 3, 4, 4, 5]
 unique = []
 for x in lst:
