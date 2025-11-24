@@ -349,8 +349,8 @@ for x in lst:
         unique.append(x)
 print(unique)
 
-Palindrome Check
-s = input("Enter text/number: ")
+# Palindrome Check
+s = input()
 if s == s[::-1]:
     print("Palindrome")
 else:
