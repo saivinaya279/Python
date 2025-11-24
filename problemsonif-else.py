@@ -342,8 +342,8 @@ for x in lst:
 print(max_num)
 
 # Remove Duplicates
-lst = [1, 2, 2, 3, 4, 4, 5]
-unique = []
+lst=[1,2,2,3,4,4,5]
+unique=[]
 for x in lst:
     if x not in unique:
         unique.append(x)
