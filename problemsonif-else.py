@@ -348,3 +348,10 @@ for x in lst:
     if x not in unique:
         unique.append(x)
 print(unique)
+
+Palindrome Check
+s = input("Enter text/number: ")
+if s == s[::-1]:
+    print("Palindrome")
+else:
+    print("Not palindrome")
