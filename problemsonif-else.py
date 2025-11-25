@@ -355,3 +355,8 @@ if s == s[::-1]:
     print("Palindrome")
 else:
     print("Not palindrome")
+    
+Count Words
+sentence = input("Enter sentence: ")
+words = sentence.split()
+print("Word count:", len(words))
