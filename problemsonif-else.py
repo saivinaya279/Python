@@ -360,3 +360,8 @@ else:
 sentence = input()
 words = sentence.split()
 print(len(words))
+
+Second Largest
+lst = [10, 20, 4, 45, 99]
+lst.sort()
+print("Second largest:", lst[-2])
