@@ -356,7 +356,7 @@ if s == s[::-1]:
 else:
     print("Not palindrome")
     
-Count Words
-sentence = input("Enter sentence: ")
+# Count Words
+sentence = input()
 words = sentence.split()
-print("Word count:", len(words))
+print(len(words))
