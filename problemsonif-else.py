@@ -365,3 +365,10 @@ print(len(words))
 lst = [10, 20, 4, 45, 99]
 lst.sort()
 print(lst[-2])
+
+. Missing Number
+lst = [1, 2, 3, 5]
+n = len(lst) + 1
+expected_sum = n * (n + 1) // 2
+actual_sum = sum(lst)
+print("Missing number:", expected_sum - actual_sum)
