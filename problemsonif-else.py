@@ -382,3 +382,11 @@ for x in lst:
     else:
         freq[x] = 1
 print(freq)
+
+Anagram Check
+s1 = input("Enter first word: ")
+s2 = input("Enter second word: ")
+if sorted(s1) == sorted(s2):
+    print("Anagram")
+else:
+    print("Not anagram")
