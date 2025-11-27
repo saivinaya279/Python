@@ -372,3 +372,13 @@ n = len(lst) + 1
 expected_sum = n * (n + 1) // 2
 actual_sum = sum(lst)
 print(expected_sum - actual_sum)
+
+Frequency Count (Dictionary)
+lst = [1, 2, 2, 3, 3, 3]
+freq = {}
+for x in lst:
+    if x in freq:
+        freq[x] += 1
+    else:
+        freq[x] = 1
+print(freq)
