@@ -384,8 +384,8 @@ for x in lst:
 print(freq)
 
 # Anagram Check
-s1 = input("Enter first word: ")
-s2 = input("Enter second word: ")
+s1 = input()
+s2 = input()
 if sorted(s1) == sorted(s2):
     print("Anagram")
 else:
