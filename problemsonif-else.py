@@ -403,9 +403,9 @@ for num in range(start, end+1):
             print(num)
             
 # Factorial of a Number
-n = int(input("Enter number: "))
-fact = 1
+n=int(input())
+fact=1
 for i in range(1, n+1):
-    fact *= i
+    fact*=i
 print("Factorial =", fact)
 
