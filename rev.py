@@ -88,3 +88,10 @@ for i in range(len(a)):
 print(vowels)
         
     
+n="hello world hi"
+b=n.split()
+count=1
+for ch in n:
+    if ch==" ":
+        count+=1
+print(count)
