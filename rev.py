@@ -79,3 +79,19 @@ sum_=0
 for i in a:
     sum_=sum_+i
 print(sum_)
+# 7️⃣ Count how many vowels are in a string.
+a=input()
+vowels=0
+for i in range(len(a)):
+    if a[i]in"aeiouAEIOU":
+        vowels=vowels+1
+print(vowels)
+        
+    
+n="hello world hi"
+b=n.split()
+count=1
+for ch in n:
+    if ch==" ":
+        count+=1
+print(count)
