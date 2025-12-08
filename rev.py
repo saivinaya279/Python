@@ -95,3 +95,32 @@ for ch in n:
     if ch==" ":
         count+=1
 print(count)
+n = int(input())
+count = 0
+
+while n > 0:
+    digit = n % 10
+    if digit % 2 == 0:
+        count += 1
+    n = n // 10
+
+print(count)
+# Problem 5 — Count how many even digits are in a number
+
+# Input:
+
+# 78436
+
+
+# Output:
+
+# 3
+count=0
+n=int(input())
+while n>0:
+    digit =n%10
+    if digit %2==0:
+        count+=1
+    n=n//10
+print(count)
+        
