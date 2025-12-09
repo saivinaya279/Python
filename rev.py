@@ -185,4 +185,35 @@ for i in range(n,m+1):
     if i%3==0:
         count=count+1
 print(count)
-        
+        # Problem 3: Count digits in a number
+
+# Input:
+
+# 1456
+
+
+# Output:
+
+# 4
+count=0
+n=int(input())
+while n>0:
+    n=n//10
+    count=count+1
+print(count)
+    # Problem 2: Sum of numbers from 1 to N
+
+# Input:
+
+# 5
+
+
+# Output:
+
+# 15
+N=int(input())
+sum=0
+for i in range(1,N+1):
+    sum=sum+i
+print(sum)
+
