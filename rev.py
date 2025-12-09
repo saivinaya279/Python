@@ -132,3 +132,57 @@ while n > 0:
     n = n // 10
 
 print(rev)
+# Problem 4 — Reverse a number
+
+# Input:
+
+# 12345
+
+
+# Output:
+
+# 54321
+n=int(input())
+rev=0
+while n>0:
+    digit=n%10
+    rev=rev*10+digit
+    n=n//10
+print(rev)
+n = int(input())
+total = 0
+
+while n > 0:
+    digit = n % 10      # extract last digit
+    total += digit      # add to total
+    n = n // 10         # remove last digit
+
+print(total)
+# Problem 3 — Find the sum of all digits in a number
+# Input:789
+# Output: 24
+n=int(input())
+total=0
+while n>0:
+    n=n%10
+    n=n//10
+    total=n+i
+print(total)
+    # Problem 2 — Count how many numbers between two limits are divisible by 3
+
+# Input:
+
+# 1 30
+
+
+# Output:
+
+# 10
+n=int(input())
+m=int(input())
+count=0
+for i in range(n,m+1):
+    if i%3==0:
+        count=count+1
+print(count)
+        
