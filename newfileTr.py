@@ -18,4 +18,99 @@ print(id(a))
 #reserve keyword
 import keyword
 print(keyword.kwlist)
+# datatypes
+""" # primitive datatypes:int,float,complex,str,boolean
+# non-primitive datatypes(list,tuple,set,dict)"""
 
+
+# LISTS :
+
+# List is the ordered collection of elements.
+# Lists is used to represent group of elements in ordered way with dynamic nature.
+# Lists are ordered, mutable, and allow duplicate values.
+
+emptyList=[];
+print(len(emptyList))
+language =["js","python","java","c++","c"]
+print(language[3])  # indexing
+print(language[4])
+print(language[-1])  # negative indexing
+
+# Slicing:
+
+print(language[0:2])  # from index 1 to index 2 
+print(language[2:0])   # from index 2 to index 0  , we get empty list as output because slicing works from left to right
+print(language[4:1])   # from index 4 to index 1 , we get empty list as output because slicing works from left to right
+print(language[1:])   # from index 1 to end
+print(language[:3])   # from start to index 3
+print(language[:])    # from start to end
+print(language[4:1:-1])  # reverse slicing from index 4 to index 1, we get ['c', 'c++', 'java'] as output because of step -1
+print(language[1:4:-1])  # reverse slicing from index 1 to index 4, we get empty list as output because slicing works from left to right
+print(language[::-1])  # reverse the list, we get reversed list as output because of step -1
+print(language[3:4:-1])  # reverse slicing from index 3 to index 4, we get empty list as output because slicing works from left to right
+# Tuples :
+# Tuple is the ordered collection of elements.
+# Tuples is used to represent group of elements in ordered way with static nature.
+# Tuples are ordered, immutable, and allow duplicate values.
+
+emptyTuple=();
+print(len(emptyTuple))
+fruits =("apple","banana","mango","grapes","orange")
+print(fruits[2])  # indexing
+print(fruits[-1])  # negative indexing
+
+t = ()
+print(type(t))  # tuple
+t1=(10,)
+print(type(t1))
+# creating tuple without parentheses
+anime="one picece","spy family","naruto"
+print(type(anime))  # tuple
+print(anime[0:1])
+
+
+# Sets :
+# Set is the unordered collection of elements.
+
+# empty set
+s = {}
+print(type(s))  # dict
+# to create empty set
+s = set()
+print(type(s))  # set
+s1 = {10,20,30,40,50}
+print(s1)
+# # Remove the duplicates from the list using set
+# list = [100,200,300,100,200,400]
+# s = list(set[list])
+# print(s)
+
+
+# # Dictionaries :
+# # Dictionary is the unordered collection of key-value pairs.
+
+# student = {
+#     "name": "Ravi",
+#     "age": 24,
+#     "course": "datascience",
+#     "college": "mru",
+#     "yearsofstudy":4,
+# }
+# # Accessing values from dict by dot or []
+# print(student["name"])
+# print(student['college'])
+
+# # formatting strings
+# print(f"my name is {student["name"]}")
+#dictionary key-value pairs
+student={
+    "name":"Alice",
+    "age":20,
+    "courses":["Math","Science","Art"]
+}
+#accessing values
+print("Student Name:",student["name"])
+print("Student Courses:",student["courses"])
+print("One subjectz:",student["courses"][0:])
+print(f"My name is {student['name']}and i am studying {student['courses'][1]} and my age is {student['age']} i Got {300+200} marks ")
+print("My name is {} and i am studying {} and my age is {} ".format(student['name'],student['courses'][0],student['age']))
