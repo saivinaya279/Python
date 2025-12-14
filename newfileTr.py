@@ -109,8 +109,29 @@ student={
     "courses":["Math","Science","Art"]
 }
 #accessing values
+
 print("Student Name:",student["name"])
 print("Student Courses:",student["courses"])
 print("One subjectz:",student["courses"][0:])
 print(f"My name is {student['name']}and i am studying {student['courses'][1]} and my age is {student['age']} i Got {300+200} marks ")
 print("My name is {} and i am studying {} and my age is {} ".format(student['name'],student['courses'][0],student['age']))
+# type casting : converting one data type to another type
+# converting str to int type *** it should be only base0(0-9) numbers ***
+print("10")
+"""print(int("10.55"))# we cannot convert flot string values into integers
+print(int("10+5j"))#we cannot convert into int ,because we can only converty before 9 or 9 
+print(int("ten")) we cannot convert normaal characters into integers"""
+print(int("10"))
+# converting str to floaat
+print(float("10"))
+print(float("100.5"))
+# print(float("10+5j"))
+# print(float("ten"))
+print(float(True))# we will get 1.0 because the True means *1*
+print(float(False))# we will get 0.0 because the false means "0"
+# converting str into complex
+print(complex("10"))
+print(complex("10.5"))
+print(complex(100,5))
+print(complex(10.5,5.5))
+print(complex(True,False))
