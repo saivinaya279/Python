@@ -202,6 +202,7 @@ print("" or "py")
 print("js" or "py")
 print(True or "true")
 print(False or "false")
+"""identity operator"""
 # we use == for content comprision 
 # we use= to assign a value
 # identity operator for address comparision or memory location comparision
@@ -212,3 +213,24 @@ print(id(a),a)
 b=10
 print(id(b),b)
 """ insted of doing the the id opertor we cn use ** is** operator to check whether the to values shring same location"""
+# common locations can be stored in only int,str ,boolean ,..we cannot use for complex
+# int
+a=10
+b=10
+print(a is b)
+name_1="py"
+name_2="py"
+print(name_1 is name_2)
+# complex: they dont store same memory 
+c1=10+5j
+c2=10+5j
+print(c1 is c2) # real and imaginry so not sme loction
+c3=c2
+print(c2 is c3) # here we re just ssigning so we get true
+print(c2 is not c3)
+# list
+l1=[10,20]; # lis stores multiple values so we caannot store the same memory location
+l2=[10,20]; 
+print(l1 is l2) # false 
+# if we want to store then we have to assign 
+print(l1 = l2)
