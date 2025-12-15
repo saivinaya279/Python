@@ -135,3 +135,80 @@ print(complex("10.5"))
 print(complex(100,5))
 print(complex(10.5,5.5))
 print(complex(True,False))
+
+# input and print
+
+a=input()
+b=input()
+print(a+b)
+print(type(a),type(b))
+
+#print seperator(,space) and end (nextline) values
+print("python","python","python")
+print("python","python",sep="$$")
+print("15","12","2025",sep="$")
+print("Javascript",end="\t")
+print("python")
+print("java")
+
+#operators:operators are used to perform operations on operands
+#1.arithmetic operator()
+print("2"+"2")
+print(10+5)
+print(10-5)
+print(10*5)
+print(10/5)
+print(10%5)
+print(10**2)
+print(100-98+21)
+
+#relational operators
+#equaility operator (==!==)
+print("2"==2)
+print(2==2)
+print(True==1)
+print(False==0)
+# comparing strings
+print(ord("A"),ord("a"))
+# logical; operator and or
+#and:for non-boolean values in **and** operator(if a is true result is b value,if a is false result is a)
+print(100 and 10)  
+print(0 and "")
+print(" " and 0)
+print(" "and "py") # only empty string is false value means("") ,space is not consider as empty(" ")
+print(False and True)
+print(True and False)
+"""# a and b
+
+If a is False → result is a
+
+If a is True → result is b
+# array without value is false value 
+hese are False values:
+
+0
+
+"" (empty string)
+
+[], {}, ()
+
+None
+
+False """
+print([] and "js")
+# **or**
+# for non-boolean values in or (if a is true result is a value ,if a is false result is b)
+print("" or "py")
+print("js" or "py")
+print(True or "true")
+print(False or "false")
+# we use == for content comprision 
+# we use= to assign a value
+# identity operator for address comparision or memory location comparision
+# # pvm doesnt store values it stores address or memory locaation:
+# if a stores value 10(a=10),then is we store b=10 then the memory location of a,b is same
+a=10
+print(id(a),a)
+b=10
+print(id(b),b)
+""" insted of doing the the id opertor we cn use ** is** operator to check whether the to values shring same location"""
