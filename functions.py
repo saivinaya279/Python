@@ -113,6 +113,9 @@ def reverse_num(n):
     return res
 n = int(input())
 print(reverse_num(n))
+
+"""# # Given two integers a1 and a2, the first and second terms of an
+Arithmetic Series respectively, the problem is to find the nth term of the series"""
 def nthTermOfAP(a1, a2, n):
     nthTerm = a1 # a1=1,a2=3
     d = a2 - a1 # d=2
