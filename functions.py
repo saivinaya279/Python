@@ -127,4 +127,33 @@ def nthTermOfAP(a1, a2, n):
 a1 = int(input()) # a1=1
 a2 = int(input()) # a2=3
 n = int(input()) # n=10
+
 print(nthTermOfAP(a1, a2, n))
+"""# You are given an integer n. Your task is to reverse the digits, 
+ensuring that the reversed number has no leading zeroes."""
+
+def isPrime(n):
+    if n <= 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+n=int(input())
+print(isPrime(n))
+def checkValidity(a, b, c): 
+    
+    # check condition 
+    if (a + b <= c) or (a + c <= b) or (b + c <= a) :
+        return False
+    else:
+        return True        
+
+# driver code 
+a = int
+b = 10
+c = 5
+if checkValidity(a, b, c):
+    print("Valid") 
+else:
+    print("Invalid")
