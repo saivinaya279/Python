@@ -232,5 +232,39 @@ print(c2 is not c3)
 l1=[10,20]; # lis stores multiple values so we caannot store the same memory location
 l2=[10,20]; 
 print(l1 is l2) # false 
-# if we want to store then we have to assign 
-print(l1 = l2)
+# if we want to store then we have to assign
+l1=l2
+print(l1 is l2)
+# membership operator 
+""" we use membership opearator (1, in ,2)  check if the qiven object or element or value present in sequence"""
+l=["python ", "java",]
+print("js" in l)
+print("c" in l)
+print("c++" not in l)
+s="datascience"
+print("d" in s)
+print("d not in s")
+# conditional statements
+l=["python","js","java","c++"]
+fav=input("enter your fav lnguage:")
+if fav in l:
+    print(f"my fav language{fav} is present at {l.index(fav)} ")
+
+
+"""iterative statements: if you want to excute a group statements 
+multiple times we have to use for a while 
+we  use for loop iterating over a sequence (list,tuple,set,dict)
+# range (start ,stop ,step)"""
+for i in range(6):
+    print(i)
+# sum of 10 num
+sum=0
+for i in range(1,11):
+    sum+=i
+print(sum)
+# A function is a resuble piece of code that performs specific tsk
+#  function 
+def greetings():
+    print("welcome")
+greetings()
+print(greetings())
