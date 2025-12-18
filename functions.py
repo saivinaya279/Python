@@ -157,12 +157,17 @@ if checkValidity(a, b, c):
     print("Valid") 
 else:
     print("Invalid")
-class Solution:
-    # Function to calculate factorial of a number.
-    def factorial(self, n: int) -> int:
-        fact=1
-        for i in range(1,n+1):
-            fact*=i
-        return fact
-            
-        
+"""# Given a positive integer, n. Find the factorial of n.
+
+Examples :
+
+Input: n = 5
+Output: 120"""
+# Explanation: 1 x 2 x 3 x 4 x 5 = 120
+def factorial(n) -> int:
+    fact=1
+    for i in range(1,n+1):
+        fact*=i
+    return fact
+n=int(input())
+print(factorial(n))

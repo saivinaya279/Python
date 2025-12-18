@@ -312,3 +312,9 @@ with open("text.txt","r") as file_obj: # if we use with keyword ,the file closes
 with open("text.txt","w") as file_obj:
     file_data = file_obj.write
     ("Data Science")
+l=["Python\n","js\n","c\n"]
+with open("text.txt","w") as file_obj:
+    file_obj.writelines(l)
+# append
+with open("text.txt","a")as file_obj:
+    file_obj.write("\n welcome to mru")
