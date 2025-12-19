@@ -268,3 +268,47 @@ def greetings():
     print("welcome")
 greetings()
 print(greetings())
+# key word arguments
+def sum(a,b):
+    return a+b
+result =sum(5,10)
+print(result)
+# keyword argu
+result_2= sum(b=100,a=10)
+print(result_2)
+# print(result)
+# lambda function without a name and one time use
+# syntax lambda arguments:action, is used for higher order functions
+n=int(input("enter n value:"))
+d=lambda x:x*x
+d(n)
+# largest num of 2
+result =lambda a,b:f"a value {a} is largest number"if a>b else f"b value {b} is largest number"
+print(result(5,10))
+# map is used apply some function to each and every elements in sequence 
+# map(function,sequence)
+l=[5,6,7]
+r=[];
+for i in l:
+    r.append(i*5)
+print(l,r)
+# result=list(map(lambda x:x*5,1))# map function,call 
+# print(result)
+# what is higher order function
+"""filter function"""
+# filter is used to filter sequence elements based on condition filter(function,sequence)
+# separate even elements into diff array
+# 8
+# first my
+file_obj=open("text.txt","r")
+print(file_obj)
+file_data=file_obj.read(2)
+print(file_data)
+file_obj.close()
+# 2nd way
+with open("text.txt","r") as file_obj: # if we use with keyword ,the file closes automatically
+    file_data = file_obj.readlines()
+    print(file_data)
+with open("text.txt","w") as file_obj:
+    file_data = file_obj.write
+    ("Data Science")
