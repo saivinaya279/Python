@@ -167,3 +167,9 @@ t2 = (5, 7, 2)
 merged = tuple(sorted(t1 + t2))
 print(merged)
 
+ # Check Element Exists in Tuple
+t = (10, 20, 30, 40)
+if 20 in t:
+    print("Element found")
+else:
+    print("Not found")
