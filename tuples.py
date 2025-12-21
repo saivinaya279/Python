@@ -175,5 +175,5 @@ else:
     print("Not found")
 
 # Nested Tuple Access
-t = (1, 2, (3, 4, 5))
-print(t[2][1])   # Output: 4
+t = (1,2,(3,4,5))
+print(t[2][1])  
