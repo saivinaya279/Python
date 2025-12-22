@@ -179,5 +179,5 @@ t = (1,2,(3,4,5))
 print(t[2][1])  
 
 # Find Index of an Element
-t = (10, 20, 30, 40)
+t=(10,20,30,40)
 print(t.index(30))
