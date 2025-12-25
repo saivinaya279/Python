@@ -168,3 +168,16 @@ merged = tuple(sorted(t1 + t2))
 print(merged)
 
  # Check Element Exists in Tuple
+t=(10,20,30,40)
+if 20 in t:
+    print("Element found")
+else:
+    print("Not found")
+
+# Nested Tuple Access
+t = (1,2,(3,4,5))
+print(t[2][1])  
+
+# Find Index of an Element
+t=(10,20,30,40)
+print(t.index(30))
