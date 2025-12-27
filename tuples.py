@@ -181,20 +181,20 @@ print(t[2][1])
 # Find Index of an Element
 t=(10,20,30,40)
 print(t.index(30))
-1️⃣ Find Maximum Element (Without using max())
-Problem
+# 1️⃣ Find Maximum Element (Without using max())
+# Problem
 
-Given a tuple of integers, find the maximum element.
+# Given a tuple of integers, find the maximum element.
 
-Logic
+# Logic
 
-Assume first element is max
+# Assume first element is max
 
-Compare each element
+# Compare each element
 
-Update max if current element is larger
+# Update max if current element is larger
 
-Solution
+# Solution
 t = (4, 7, 1, 9, 3)
 
 max_val = t[0]
@@ -204,8 +204,8 @@ for i in t:
 
 print(max_val)
 
-2️⃣ Find Minimum Element (Without using min())
-Solution
+# 2️⃣ Find Minimum Element (Without using min())
+# Solution
 t = (6, 2, 8, 1, 4)
 
 min_val = t[0]
@@ -215,12 +215,12 @@ for i in t:
 
 print(min_val)
 
-3️⃣ Count Frequency of Each Element
-Problem
+# 3️⃣ Count Frequency of Each Element
+# Problem
 
-Count how many times each element occurs.
+# Count how many times each element occurs.
 
-Solution
+# Solution
 t = (1, 2, 2, 3, 1, 4)
 
 freq = {}
@@ -228,3 +228,33 @@ for i in t:
     freq[i] = freq.get(i, 0) + 1
 
 print(freq)
+6️⃣ Reverse Tuple Using Loop (No slicing)
+Solution
+t = (1, 2, 3, 4)
+
+rev = ()
+for i in t:
+    rev = (i,) + rev
+
+print(rev)
+
+7️⃣ Check If Tuple Is Palindrome
+Problem
+
+Same forwards and backwards.
+
+Solution
+t = (1, 2, 3, 2, 1)
+
+left = 0
+right = len(t) - 1
+is_pal = True
+
+while left < right:
+    if t[left] != t[right]:
+        is_pal = False
+        break
+    left += 1
+    right -= 1
+
+print(is_pal)
