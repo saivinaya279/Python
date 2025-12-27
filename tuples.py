@@ -181,3 +181,50 @@ print(t[2][1])
 # Find Index of an Element
 t=(10,20,30,40)
 print(t.index(30))
+1️⃣ Find Maximum Element (Without using max())
+Problem
+
+Given a tuple of integers, find the maximum element.
+
+Logic
+
+Assume first element is max
+
+Compare each element
+
+Update max if current element is larger
+
+Solution
+t = (4, 7, 1, 9, 3)
+
+max_val = t[0]
+for i in t:
+    if i > max_val:
+        max_val = i
+
+print(max_val)
+
+2️⃣ Find Minimum Element (Without using min())
+Solution
+t = (6, 2, 8, 1, 4)
+
+min_val = t[0]
+for i in t:
+    if i < min_val:
+        min_val = i
+
+print(min_val)
+
+3️⃣ Count Frequency of Each Element
+Problem
+
+Count how many times each element occurs.
+
+Solution
+t = (1, 2, 2, 3, 1, 4)
+
+freq = {}
+for i in t:
+    freq[i] = freq.get(i, 0) + 1
+
+print(freq)
