@@ -258,3 +258,14 @@ while left < right:
     right -= 1
 
 print(is_pal)
+1️⃣4️⃣ Find Common Elements Between Two Tuples
+Solution
+t1 = (1, 2, 3, 4)
+t2 = (3, 4, 5, 6)
+
+common = ()
+for i in t1:
+    if i in t2:
+        common += (i,)
+
+print(common)
