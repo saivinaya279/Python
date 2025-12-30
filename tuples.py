@@ -228,8 +228,8 @@ for i in t:
     freq[i] = freq.get(i, 0) + 1
 
 print(freq)
-6️⃣ Reverse Tuple Using Loop (No slicing)
-Solution
+# 6️⃣ Reverse Tuple Using Loop (No slicing)
+# Solution
 t = (1, 2, 3, 4)
 
 rev = ()
@@ -238,12 +238,12 @@ for i in t:
 
 print(rev)
 
-7️⃣ Check If Tuple Is Palindrome
-Problem
+# 7️⃣ Check If Tuple Is Palindrome
+# Problem
 
-Same forwards and backwards.
+# Same forwards and backwards.
 
-Solution
+# Solution
 t = (1, 2, 3, 2, 1)
 
 left = 0
@@ -258,14 +258,3 @@ while left < right:
     right -= 1
 
 print(is_pal)
-1️⃣4️⃣ Find Common Elements Between Two Tuples
-Solution
-t1 = (1, 2, 3, 4)
-t2 = (3, 4, 5, 6)
-
-common = ()
-for i in t1:
-    if i in t2:
-        common += (i,)
-
-print(common)
