@@ -238,24 +238,6 @@ for i in t:
 
 print(rev)
 
-# 7️⃣ Check If Tuple Is Palindrome
-# Problem
-
-# Same forwards and backwards.
-
-# Solution
-t = (1, 2, 3, 2, 1)
-
-left = 0
-right = len(t) - 1
-is_pal = True
-
-while left < right:
-    if t[left] != t[right]:
-        is_pal = False
-        break
-    left += 1
-    right -= 1
 
 print(is_pal)
 # 1️⃣4️⃣ Find Common Elements Between Two Tuples
