@@ -1,3 +1,90 @@
+"""BASIC QUESTIONS
+
+Create a dictionary with 5 key–value pairs.
+
+Access a value using a key.
+
+Add a new key–value pair to an existing dictionary.
+
+Update the value of an existing key.
+
+Delete a key from a dictionary.
+
+Check whether a key exists in a dictionary.
+
+Find the number of key–value pairs in a dictionary.
+
+Print all keys of a dictionary.
+
+Print all values of a dictionary.
+
+Print all key–value pairs.
+
+🟡 INTERMEDIATE QUESTIONS
+
+Count the frequency of each element in a list using a dictionary.
+
+Count the frequency of characters in a string.
+
+Find the key with the maximum value in a dictionary.
+
+Find the key with the minimum value in a dictionary.
+
+Merge two dictionaries into one.
+
+Remove duplicate values from a dictionary.
+
+Convert two lists into a dictionary.
+
+Sort a dictionary by keys.
+
+Sort a dictionary by values.
+
+Reverse keys and values of a dictionary.
+
+🔵 LOGIC BUILDING / INTERVIEW QUESTIONS
+
+Find the first non-repeating character in a string using a dictionary.
+
+Check whether two strings are anagrams using a dictionary.
+
+Find all elements that appear more than once in a list.
+
+Find the most frequent element in a list.
+
+Group words with the same frequency of characters.
+
+Check if all values in a dictionary are unique.
+
+Find common keys between two dictionaries.
+
+Find common values between two dictionaries.
+
+Replace dictionary values with their squares.
+
+Create a dictionary from a string where keys are characters and values are ASCII codes.
+
+🔴 ADVANCED / PLACEMENT LEVEL
+
+Given a dictionary of student marks, find the topper.
+
+Given a sentence, find the word with highest frequency.
+
+Implement a phone directory using dictionary.
+
+Design a dictionary-based login system.
+
+Implement LRU Cache logic using dictionary.
+
+Find pairs of elements whose sum is equal to a given number.
+
+Find subarray with zero sum using dictionary.
+
+Find longest substring without repeating characters.
+
+Group anagrams from a list of strings.
+
+Find number of good pairs (i < j and nums[i] == nums[j])."""
 d1={1:'Geeks',2:'for',3:'geeks'}
 print(d1)
 # create dictionary using dict() constructor
@@ -51,3 +138,79 @@ for key, value in d.items():
 d = {1: 'Geeks', 2: 'For',
         3: {'A': 'Welcome', 'B': 'To', 'C': 'Geeks'}}
 print(d)
+student = {
+    "name": "Vinaya",
+    "age": 20,
+    "course": "Data Science"
+}
+print(student)
+student["college"] = "GITAM"
+student["age"] = 21
+del student["course"]     # remove specific key
+student.pop("age")        # remove and return value
+
+print(student)
+# Count the frequency of each element in a list using a dictionary.
+n=[1,2,3,1,2,3]
+freq={}
+for num in n:
+    if num in freq:
+        freq[num]+=1
+    else:
+        freq[num]=1
+print(freq)
+# othere method (refer notes)
+nums = [1,2,2,3,1,1]
+freq = {}
+
+for n in nums:
+    freq[n] = freq.get(n, 0) + 1 # (key,default)
+
+print(freq)
+# Find the key with the maximum value in a dictionary. question breakdown
+nums={"a":10,"b":20,"c":30}
+max_1=0
+max_2=0
+for key,value in nums.items():
+    if value>max_2:
+        max_2=value
+        max_1=key
+print(max_1)
+# Find the key with the minimum value in a dictionary. question breakdown.
+nums={"a":10,"b":20,"c":30}
+min_key=min(nums,key=nums.get)
+print(min_key)
+# Merge two dictionaries into one.
+# case1: **,
+"""Dictionary Unpacking (**)
+Creates a new dictionary by combining multiple dictionaries. 
+Original dictionaries remain unchanged."""
+student={}
+student["name"]="vinaya"
+print(student)
+class1={}
+class1["name_1"]="Delta"
+print(class1)
+merged={**student,**class1}
+print(merged)
+"""# update()
+Merges another dictionary into the current one by modifying it. Duplicate keys are overwritten."""
+student.update(class1)
+print(student)
+# Method 3: Using | Operator 
+"""Merges two dictionaries and returns a new one. Right-side values override duplicates."""
+d1 = {"a": 1, "b": 2}
+d2 = {"c": 3, "d": 4}
+
+merged = d1 | d2
+print(merged)
+"""Using a Loop
+Manually inserts key–value pairs, allowing custom merge logic."""
+d1 = {"a": 1, "b": 2}
+d2 = {"c": 3, "d": 4}
+
+merged = d1.copy()
+for k, v in d2.items():
+    merged[k] = v
+
+print(merged)
