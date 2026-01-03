@@ -144,6 +144,15 @@ student = {
     "course": "Data Science"
 }
 print(student)
+ # Create a dictionary with 5 key–value pairs.
+student={
+    "name":"vinaya",
+    "age":20,
+    "course":"ds",
+    "email" : " kumbamsai@gmail.com",
+    "roll no":280
+}
+print(student)
 student["college"] = "GITAM"
 student["age"] = 21
 del student["course"]     # remove specific key
