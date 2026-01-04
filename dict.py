@@ -210,16 +210,3 @@ print(student)
 """Merges two dictionaries and returns a new one. Right-side values override duplicates."""
 d1 = {"a": 1, "b": 2}
 d2 = {"c": 3, "d": 4}
-
-merged = d1 | d2
-print(merged)
-"""Using a Loop
-Manually inserts key–value pairs, allowing custom merge logic."""
-d1 = {"a": 1, "b": 2}
-d2 = {"c": 3, "d": 4}
-
-merged = d1.copy()
-for k, v in d2.items():
-    merged[k] = v
-
-print(merged)
