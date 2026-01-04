@@ -176,37 +176,3 @@ for n in nums:
     freq[n] = freq.get(n, 0) + 1 # (key,default)
 
 print(freq)
-# Find the key with the maximum value in a dictionary. question breakdown
-nums={"a":10,"b":20,"c":30}
-max_1=0
-max_2=0
-for key,value in nums.items():
-    if value>max_2:
-        max_2=value
-        max_1=key
-print(max_1)
-# Find the key with the minimum value in a dictionary. question breakdown.
-nums={"a":10,"b":20,"c":30}
-min_key=min(nums,key=nums.get)
-print(min_key)
-# Merge two dictionaries into one.
-# case1: **,
-"""Dictionary Unpacking (**)
-Creates a new dictionary by combining multiple dictionaries. 
-Original dictionaries remain unchanged."""
-student={}
-student["name"]="vinaya"
-print(student)
-class1={}
-class1["name_1"]="Delta"
-print(class1)
-merged={**student,**class1}
-print(merged)
-"""# update()
-Merges another dictionary into the current one by modifying it. Duplicate keys are overwritten."""
-student.update(class1)
-print(student)
-# Method 3: Using | Operator 
-"""Merges two dictionaries and returns a new one. Right-side values override duplicates."""
-d1 = {"a": 1, "b": 2}
-d2 = {"c": 3, "d": 4}
