@@ -210,16 +210,3 @@ print(student)
 """Merges two dictionaries and returns a new one. Right-side values override duplicates."""
 d1 = {"a": 1, "b": 2}
 d2 = {"c": 3, "d": 4}
-# 1️⃣ Count Frequency of Elements
-# ❓ Problem
-
-# Count how many times each number appears.
-
-# ✅ Code
-nums = [1, 2, 2, 3, 1]
-freq = {}
-
-for n in nums:
-    freq[n] = freq.get(n, 0) + 1
-
-print(freq)
