@@ -36,3 +36,6 @@ print(s)
 s = {1, 2, 3}
 s.remove(2)
 print(s)
+# /length
+s = {10, 20, 30}
+print(len(s))
