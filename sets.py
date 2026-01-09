@@ -33,3 +33,6 @@ print(set1)
 s = {1, 2}
 s.add(3)
 print(s)
+s = {1, 2, 3}
+s.remove(2)
+print(s)
