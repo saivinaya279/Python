@@ -39,3 +39,6 @@ print(s)
 # /length
 s = {10, 20, 30}
 print(len(s))
+# Check if an element exists in a set
+s = {5, 10, 15}
+print(10 in s)
