@@ -29,3 +29,16 @@ set1.add(4)
 set1.update([5, 6])
 
 print(set1)
+# add
+s = {1, 2}
+s.add(3)
+print(s)
+s = {1, 2, 3}
+s.remove(2)
+print(s)
+# /length
+s = {10, 20, 30}
+print(len(s))
+# Check if an element exists in a set
+s = {5, 10, 15}
+print(10 in s)
