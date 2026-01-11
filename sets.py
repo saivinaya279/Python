@@ -46,3 +46,13 @@ print(10 in s)
 a = {1, 2, 3}
 b = {2, 3}
 print(a - b)
+"""Problem 1: Remove Duplicate Numbers
+Input
+[1, 2, 2, 3, 4, 4]
+
+Output
+{1, 2, 3, 4}
+"""
+nums = [1, 2, 2, 3, 4, 4]
+result = set(nums)
+print(result)
