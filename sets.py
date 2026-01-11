@@ -62,3 +62,5 @@ Input
 
 Output
 4"""
+nums = [10, 20, 20, 30, 40, 40]
+print(len(set(nums)))
