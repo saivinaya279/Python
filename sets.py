@@ -56,3 +56,9 @@ Output
 nums = [1, 2, 2, 3, 4, 4]
 result = set(nums)
 print(result)
+"""🔹 Problem 2: Count Unique Elements
+Input
+[10, 20, 20, 30, 40, 40]
+
+Output
+4"""
