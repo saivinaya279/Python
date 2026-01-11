@@ -42,3 +42,7 @@ print(len(s))
 # Check if an element exists in a set
 s = {5, 10, 15}
 print(10 in s)
+# Difference of sets
+a = {1, 2, 3}
+b = {2, 3}
+print(a - b)
