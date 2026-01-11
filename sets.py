@@ -64,3 +64,10 @@ Output
 4"""
 nums = [10, 20, 20, 30, 40, 40]
 print(len(set(nums)))
+"""3: Check Common Elements Between Two Lists
+Input
+[1, 2, 3]
+[3, 4, 5]
+
+Output
+{3}"""
