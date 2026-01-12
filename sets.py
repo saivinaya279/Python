@@ -74,3 +74,10 @@ Output
 a = [1, 2, 3]
 b = [3, 4, 5]
 print(set(a) & set(b))
+"""4: Find Different Elements Between Two Lists
+Input
+[1, 2, 3]
+[3, 4, 5]
+
+Output
+{1, 2}"""
