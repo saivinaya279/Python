@@ -46,3 +46,31 @@ print(10 in s)
 a = {1, 2, 3}
 b = {2, 3}
 print(a - b)
+"""Problem 1: Remove Duplicate Numbers
+Input
+[1, 2, 2, 3, 4, 4]
+
+Output
+{1, 2, 3, 4}
+"""
+nums = [1, 2, 2, 3, 4, 4]
+result = set(nums)
+print(result)
+"""🔹 Problem 2: Count Unique Elements
+Input
+[10, 20, 20, 30, 40, 40]
+
+Output
+4"""
+nums = [10, 20, 20, 30, 40, 40]
+print(len(set(nums)))
+"""3: Check Common Elements Between Two Lists
+Input
+[1, 2, 3]
+[3, 4, 5]
+
+Output
+{3}"""
+a = [1, 2, 3]
+b = [3, 4, 5]
+print(set(a) & set(b))
