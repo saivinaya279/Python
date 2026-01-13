@@ -101,3 +101,9 @@ Output
 """
 s = "hello"
 print(set(s))
+"""7: Count Unique Words in a Sentence
+Input
+"python is easy and python is powerful"
+
+Output
+5"""
