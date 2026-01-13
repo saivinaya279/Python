@@ -92,3 +92,10 @@ Output
 True"""
 nums = [1, 2, 3, 4]
 print(len(nums) == len(set(nums)))
+"""6: Unique Characters in a String
+Input
+"hello"
+
+Output
+{'h', 'e', 'l', 'o'}
+"""
