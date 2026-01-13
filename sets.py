@@ -84,3 +84,11 @@ Output
 a = [1, 2, 3]
 b = [3, 4, 5]
 print(set(a) - set(b))
+"""5: Check if All Elements are Unique
+Input
+[1, 2, 3, 4]
+
+Output
+True"""
+nums = [1, 2, 3, 4]
+print(len(nums) == len(set(nums)))
