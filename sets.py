@@ -107,3 +107,5 @@ Input
 
 Output
 5"""
+sentence = "python is easy and python is powerful"
+print(len(set(sentence.split())))
