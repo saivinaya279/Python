@@ -99,3 +99,5 @@ Input
 Output
 {'h', 'e', 'l', 'o'}
 """
+s = "hello"
+print(set(s))
