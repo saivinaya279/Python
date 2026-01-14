@@ -109,3 +109,9 @@ Output
 5"""
 sentence = "python is easy and python is powerful"
 print(len(set(sentence.split())))
+""": Remove Duplicate Names
+Input
+["ram", "sam", "ram", "tom"]
+
+Output
+{'ram', 'sam', 'tom'}"""
