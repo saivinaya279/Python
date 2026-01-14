@@ -115,3 +115,5 @@ Input
 
 Output
 {'ram', 'sam', 'tom'}"""
+names = ["ram", "sam", "ram", "tom"]
+print(set(names))
