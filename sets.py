@@ -117,3 +117,10 @@ Output
 {'ram', 'sam', 'tom'}"""
 names = ["ram", "sam", "ram", "tom"]
 print(set(names))
+"""10: Students Present in Both Classes
+Input
+Class A: [1, 2, 3]
+Class B: [3, 4, 5]
+
+Output
+{3}"""
