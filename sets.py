@@ -127,3 +127,8 @@ Output
 a = [1, 2, 3]
 b = [3, 4, 5]
 print(set(a) & set(b))
+# 1: Find Missing Numbers from 1 to N
+# Input
+nums = [1, 2, 4, 6]
+n = 6
+
