@@ -131,4 +131,9 @@ print(set(a) & set(b))
 # Input
 nums = [1, 2, 4, 6]
 n = 6
-
+nums = [1, 2, 4, 6]
+n = 6
+print(set(range(1, n + 1)) - set(nums))
+# 2: Find Duplicate Elements
+# Input
+# [1, 2, 3, 2, 4, 3, 5]
