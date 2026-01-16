@@ -145,10 +145,4 @@ for i in nums:
         dup.add(i)
     seen.add(i)
 print(dup)
-# Find Common Words in Two Sentences
-# Input
-# s1 = "python is easy"
-# s2 = "python is powerful"
-s1 = "python is easy"
-s2 = "python is powerful"
-print(set(s1.split()) & set(s2.split()))
+
