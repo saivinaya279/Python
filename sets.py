@@ -127,22 +127,4 @@ Output
 a = [1, 2, 3]
 b = [3, 4, 5]
 print(set(a) & set(b))
-# 1: Find Missing Numbers from 1 to N
-# Input
-nums = [1, 2, 4, 6]
-n = 6
-nums = [1, 2, 4, 6]
-n = 6
-print(set(range(1, n + 1)) - set(nums))
-# 2: Find Duplicate Elements
-# Input
-# [1, 2, 3, 2, 4, 3, 5]
-nums = [1, 2, 3, 2, 4, 3, 5]
-seen = set()
-dup = set()
-for i in nums:
-    if i in seen:
-        dup.add(i)
-    seen.add(i)
-print(dup)
 
