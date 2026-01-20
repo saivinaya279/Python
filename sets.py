@@ -101,3 +101,54 @@ Output
 """
 s = "hello"
 print(set(s))
+"""7: Count Unique Words in a Sentence
+Input
+"python is easy and python is powerful"
+
+Output
+5"""
+sentence = "python is easy and python is powerful"
+print(len(set(sentence.split())))
+""": Remove Duplicate Names
+Input
+["ram", "sam", "ram", "tom"]
+
+Output
+{'ram', 'sam', 'tom'}"""
+names = ["ram", "sam", "ram", "tom"]
+print(set(names))
+"""10: Students Present in Both Classes
+Input
+Class A: [1, 2, 3]
+Class B: [3, 4, 5]
+
+Output
+{3}"""
+a = [1, 2, 3]
+b = [3, 4, 5]
+print(set(a) & set(b))
+# 1: Find Missing Numbers from 1 to N
+# Input
+nums = [1, 2, 4, 6]
+n = 6
+nums = [1, 2, 4, 6]
+n = 6
+print(set(range(1, n + 1)) - set(nums))
+# 2: Find Duplicate Elements
+# Input
+# [1, 2, 3, 2, 4, 3, 5]
+nums = [1, 2, 3, 2, 4, 3, 5]
+seen = set()
+dup = set()
+for i in nums:
+    if i in seen:
+        dup.add(i)
+    seen.add(i)
+print(dup)
+# Find Common Words in Two Sentences
+# Input
+# s1 = "python is easy"
+# s2 = "python is powerful"
+s1 = "python is easy"
+s2 = "python is powerful"
+print(set(s1.split()) & set(s2.split()))
