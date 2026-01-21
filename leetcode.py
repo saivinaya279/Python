@@ -194,3 +194,6 @@ if __name__ == "__main__":
 
     print("Input:", nums)
     print("Missing Number:", result)
+"""Time Complexity: O(n)
+
+Space Complexity: O(n) (because of sets) """
