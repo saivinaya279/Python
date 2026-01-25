@@ -22,3 +22,24 @@ a=int(input())
 b=int(input())
 c=int(input())
 print(smallest_num(a,b,c))
+def leap_year(n):
+    if n%400==0:
+        return "leap year"
+    elif n%4==0 and n%100!=0:
+        return "leap year"
+    return "not leap year"
+n=int(input())
+print(leap_year(n))
+
+def pass_fail(n):
+    if n>=35:
+        return "Pass"
+    return "Fail"
+n=int(input())
+print(pass_fail(n))
+def age_elb(n):
+    if n>=18:
+        return "Eligible"
+    return "Not Eligible"
+n=int(input())
+print(age_elb(n))
