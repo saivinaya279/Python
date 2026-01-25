@@ -43,3 +43,9 @@ def age_elb(n):
     return "Not Eligible"
 n=int(input())
 print(age_elb(n))
+def pos_neg(n):
+    if n>0:
+        return "Positive"
+    return "Negative"
+n=int(input())
+print(pos_neg(n))
