@@ -49,3 +49,15 @@ def pos_neg(n):
     return "Negative"
 n=int(input())
 print(pos_neg(n))
+for i in range(1,6):
+    for j in range(i):
+        print("*",end=" ")
+    print()
+for i in range(5,0,-2):
+    for j in range(i):
+        print("*",end=" ")
+    print()
+n=5
+for i in range(1,n+1):
+    for j in range(i):
+        print("*",end=" ")
