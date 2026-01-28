@@ -214,3 +214,8 @@ for i in range(1,N+1):
     sum=sum+i
 print(sum)
 
+# Square Pattern
+for i in range(5):
+    for j in range(5):
+        print("*",end=" ")
+    print()
