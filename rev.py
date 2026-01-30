@@ -304,6 +304,18 @@ while left <right:
     right-=1
 print(arr)
 
-        
+arr=[1,4,5,8,9]
+target=10
+left=0
+right=n-1
+while left<right:
+    current_sum=arr[left]+arr[right]
+    if current_sum==target:
+        print("pair found")
+        break
+    elif current_sum<target:
+        left+=1
+    else:
+        right-=1       
         
         
