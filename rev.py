@@ -321,4 +321,23 @@ while left<right:
 """4. Move All Zeros to End
 Description: Move all zero elements to the end of the array while maintaining the order of
 non-zero elements."""
+def move_zeros(arr):
+    pos = 0
+
+    # Move non-zero elements forward
+    for i in range(len(arr)):
+        if arr[i] != 0:
+            arr[pos] = arr[i]
+            pos += 1
+
+    # Fill remaining positions with zero
+    for i in range(pos, len(arr)):
+        arr[i] = 0
+
+
+# Input
+arr = list(map(int, input().split()))
+
+move_zeros(arr)
+print(arr)
         
