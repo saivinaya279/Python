@@ -341,4 +341,4 @@ move_zeros(arr)
 print(arr)
 """5. Count Pairs with Sum Less Than K
 Description: Count the number of pairs in a sorted array whose sum is less than a given
-value.""
+value."""
