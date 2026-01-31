@@ -324,20 +324,21 @@ non-zero elements."""
 def move_zeros(arr):
     pos = 0
 
-    # Move non-zero elements forward
     for i in range(len(arr)):
         if arr[i] != 0:
             arr[pos] = arr[i]
             pos += 1
 
-    # Fill remaining positions with zero
+    
     for i in range(pos, len(arr)):
         arr[i] = 0
 
 
-# Input
+
 arr = list(map(int, input().split()))
 
 move_zeros(arr)
 print(arr)
-        
+"""5. Count Pairs with Sum Less Than K
+Description: Count the number of pairs in a sorted array whose sum is less than a given
+value.""
