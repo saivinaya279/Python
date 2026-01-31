@@ -329,3 +329,6 @@ for i in range(len(arr)):
 for i in range(pos,len(arr)):
     arr[i]=0
 print(arr)
+"""5. Count Pairs with Sum Less Than K
+Description: Count the number of pairs in a sorted array whose sum is less than a given
+value."""
