@@ -317,44 +317,4 @@ while left<right:
         left+=1
     else:
         right-=1       
-        
-"""4. Move All Zeros to End
-Description: Move all zero elements to the end of the array while maintaining the order of
-non-zero elements."""
-def move_zeros(arr):
-    pos = 0
-
-    for i in range(len(arr)):
-        if arr[i] != 0:
-            arr[pos] = arr[i]
-            pos += 1
-
-    
-    for i in range(pos, len(arr)):
-        arr[i] = 0
-
-
-
-arr = list(map(int, input().split()))
-
-move_zeros(arr)
-print(arr)
-"""5. Count Pairs with Sum Less Than K
-Description: Count the number of pairs in a sorted array whose sum is less than a given
-value."""
-arr=list(map(int,input().split()))
-target=6
-left=0
-right=len(arr)-1
-count=0
-while left<right:
-    cur_sum=arr[left]+arr[right]
-    if cur_sum<target:
-        count+=(right-left)
-        left+=1
-        
-    else:
-         right-=1
-print(count)
-    
-        
+ 
