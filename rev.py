@@ -346,3 +346,13 @@ while left<right:
     else:
          right-=1
 print(count)
+n=list(map(int,input().split()))
+seen=set()
+unique_num=[]
+for i in n:
+    if i not in seen:
+        seen.add(i)
+        unique_num.append(i)
+print(unique_num)
+        
+    
