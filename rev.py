@@ -333,26 +333,3 @@ print(arr)
 Description: Count the number of pairs in a sorted array whose sum is less than a given
 value."""
 arr=list(map(int,input().split()))
-target=6
-left=0
-right=len(arr)-1
-count=0
-while left<right:
-    cur_sum=arr[left]+arr[right]
-    if cur_sum<target:
-        count+=(right-left)
-        left+=1
-        
-    else:
-         right-=1
-print(count)
-n=list(map(int,input().split()))
-seen=set()
-unique_num=[]
-for i in n:
-    if i not in seen:
-        seen.add(i)
-        unique_num.append(i)
-print(unique_num)
-        
-    
