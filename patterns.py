@@ -167,3 +167,18 @@ for i in range(1,n+1):
     for j in range(i):
         print(j+1,end=" ")
     print()
+n=int(input())
+for i in range(n):
+    if i ==0 or i==n-1:
+        print("*" * n)
+    else:
+        print("*" + " " *(n-2) + "*")
+    
+    
+"""Example:
+If n = 4, the output should be:
+
+1 2 3 4
+1 2 3 4
+1 2 3 4
+1 2 3 4"""
