@@ -161,3 +161,6 @@ print(common)
 # Remove duplicates from a list and print the count of unique elements.
 
 nums = [1, 2, 2, 3, 4, 4, 5]
+unique_nums = set(nums)
+print(unique_nums)
+print(len(unique_nums))
