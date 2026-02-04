@@ -164,3 +164,6 @@ nums = [1, 2, 2, 3, 4, 4, 5]
 unique_nums = set(nums)
 print(unique_nums)
 print(len(unique_nums))
+# count the frequency of each character in a string.
+
+s = "programming"
