@@ -259,3 +259,8 @@ t = (10, 20, 30, 40, 50)
 unique = list(set(t))
 unique.sort()
 print(unique[-2])
+"""Convert list of tuples to dictionary
+
+Problem:"""
+
+pairs = [("a", 1), ("b", 2), ("c", 3)]
