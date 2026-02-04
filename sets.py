@@ -152,3 +152,7 @@ print(dup)
 s1 = "python is easy"
 s2 = "python is powerful"
 print(set(s1.split()) & set(s2.split()))
+"""Given two lists, return a set of common elements.
+
+l1 = [1, 2, 3, 4, 5]
+l2 = [3, 4, 5, 6, 7]"""
