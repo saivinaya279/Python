@@ -251,3 +251,8 @@ for i in t1:
         common += (i,)
 
 print(common)
+"""Find second largest number in a tuple
+
+Problem:"""
+
+t = (10, 20, 30, 40, 50)
