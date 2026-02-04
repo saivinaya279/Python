@@ -256,3 +256,6 @@ print(common)
 Problem:"""
 
 t = (10, 20, 30, 40, 50)
+unique = list(set(t))
+unique.sort()
+print(unique[-2])
