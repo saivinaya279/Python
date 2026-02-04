@@ -158,3 +158,6 @@ l1 = [1, 2, 3, 4, 5]
 l2 = [3, 4, 5, 6, 7]
 common = set(l1) & set(l2)
 print(common)
+# Remove duplicates from a list and print the count of unique elements.
+
+nums = [1, 2, 2, 3, 4, 4, 5]
