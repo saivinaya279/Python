@@ -176,3 +176,5 @@ print(freq)
 # Find elements present in list1 but not in list2
 l1 = [1, 2, 3, 4, 5]
 l2 = [3, 4, 6]
+result = set(l1) - set(l2)
+print(result)
