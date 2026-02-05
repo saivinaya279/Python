@@ -264,3 +264,5 @@ print(unique[-2])
 Problem:"""
 
 pairs = [("a", 1), ("b", 2), ("c", 3)]
+d = dict(pairs)
+print(d)
