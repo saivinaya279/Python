@@ -266,3 +266,6 @@ Problem:"""
 pairs = [("a", 1), ("b", 2), ("c", 3)]
 d = dict(pairs)
 print(d)
+# Count how many times 2 appears.
+
+t = (1, 2, 3, 2, 4, 2)
