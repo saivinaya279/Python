@@ -196,3 +196,8 @@ for i in range(0, num):
     for j in range(0, num):
         print("*", end="")
     print()
+"""Number triangle
+1
+12
+123
+1234"""
