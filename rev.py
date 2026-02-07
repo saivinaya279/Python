@@ -366,3 +366,4 @@ def intersect(nums1, nums2):
             res.append(n)
             c1[n] -= 1
     return res
+# 3 First Unique Character in a String
