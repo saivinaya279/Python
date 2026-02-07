@@ -344,3 +344,14 @@ for ch in s:
     freq[ch] = freq.get(ch, 0) + 1
 print(freq)
 # Longest Substring Without Repeating Characters
+def lengthOfLongestSubstring(s):
+    seen = set()
+    l = ans = 0
+
+    for r in range(len(s)):
+        while s[r] in seen:
+            seen.remove(s[l])
+            l += 1
+        seen.add(s[r])
+        ans = max(ans, r - l + 1)
+    return ans
