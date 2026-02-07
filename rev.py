@@ -367,3 +367,12 @@ def intersect(nums1, nums2):
             c1[n] -= 1
     return res
 # 3 First Unique Character in a String
+# Move Zeroes
+def moveZeroes(nums):
+    pos = 0
+    for n in nums:
+        if n != 0:
+            nums[pos] = n
+            pos += 1
+    for i in range(pos, len(nums)):
+        nums[i] = 0
