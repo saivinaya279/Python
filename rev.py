@@ -393,3 +393,10 @@ while l < r:
     r -= 1
 
 print("".join(s))
+# 1️⃣3️⃣ Missing Number
+nums = [3, 0, 1]
+
+n = len(nums)
+total = n * (n + 1) // 2
+
+print(total - sum(nums))
