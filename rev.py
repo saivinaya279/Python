@@ -400,3 +400,11 @@ n = len(nums)
 total = n * (n + 1) // 2
 
 print(total - sum(nums))
+# Count Frequency of Characters
+s = "banana"
+freq = {}
+
+for c in s:
+    freq[c] = freq.get(c, 0) + 1
+
+print(freq)
