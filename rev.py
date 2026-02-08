@@ -382,9 +382,14 @@ for i in range(pos, len(nums)):
 print(nums)
 
 # 9️⃣ Reverse String
-def reverseString(s):
-    l, r = 0, len(s) - 1
-    while l < r:
-        s[l], s[r] = s[r], s[l]
-        l += 1
-        r -= 1
+s = list("hello")
+
+l = 0
+r = len(s) - 1
+
+while l < r:
+    s[l], s[r] = s[r], s[l]
+    l += 1
+    r -= 1
+
+print("".join(s))
