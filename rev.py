@@ -368,12 +368,23 @@ def intersect(nums1, nums2):
     return res
 # 3 First Unique Character in a String
 # Move Zeroes
-def moveZeroes(nums):
-    pos = 0
-    for n in nums:
-        if n != 0:
-            nums[pos] = n
-            pos += 1
-    for i in range(pos, len(nums)):
-        nums[i] = 0
+nums = [0, 1, 0, 3, 12]
+
+pos = 0
+for n in nums:
+    if n != 0:
+        nums[pos] = n
+        pos += 1
+
+for i in range(pos, len(nums)):
+    nums[i] = 0
+
+print(nums)
+
 # 9️⃣ Reverse String
+def reverseString(s):
+    l, r = 0, len(s) - 1
+    while l < r:
+        s[l], s[r] = s[r], s[l]
+        l += 1
+        r -= 1
