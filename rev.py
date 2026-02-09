@@ -416,3 +416,12 @@ for n in nums:
     freq[n] = freq.get(n, 0) + 1
 
 print(freq)
+# Remove Special Characters from String
+s = "py@th#on!123"
+clean = ""
+
+for c in s:
+    if c.isalnum():
+        clean += c
+
+print(clean)
