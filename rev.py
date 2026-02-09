@@ -425,3 +425,11 @@ for c in s:
         clean += c
 
 print(clean)
+# Sum of Digits in a Number
+n = 12345
+total = 0
+
+for d in str(n):
+    total += int(d)
+
+print(total)
