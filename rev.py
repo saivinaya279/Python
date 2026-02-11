@@ -444,3 +444,16 @@ for i in lst:
         freq[i] = 1
 
 print(freq)
+# Find Second Smallest Number
+lst = [5,1,8,2,9]
+
+smallest = second = 99999
+
+for i in lst:
+    if i < smallest:
+        second = smallest
+        smallest = i
+    elif i < second and i != smallest:
+        second = i
+
+print(second)
