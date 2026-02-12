@@ -457,3 +457,13 @@ for i in lst:
         second = i
 
 print(second)
+# Longest Word in Sentence
+text = "I love learning python programming"
+words = text.split()
+
+longest = ""
+for word in words:
+    if len(word) > len(longest):
+        longest = word
+
+print(longest)
