@@ -484,3 +484,15 @@ for ch in text:
     if text.count(ch) == 1:
         print(ch)
         break
+# 0. Find Most Frequent Element
+lst = [1,3,2,3,4,3,5]
+
+freq = {}
+for i in lst:
+    if i in freq:
+        freq[i] += 1
+    else:
+        freq[i] = 1
+
+max_key = max(freq, key=freq.get)
+print(max_key)
