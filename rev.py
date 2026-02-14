@@ -477,3 +477,10 @@ for i in a:
         res.append(i)
 
 print(res)
+# 5. Find First Non-Repeating Character
+text = "aabbcde"
+
+for ch in text:
+    if text.count(ch) == 1:
+        print(ch)
+        break
