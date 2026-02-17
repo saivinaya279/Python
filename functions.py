@@ -179,3 +179,25 @@ def myfunc():
   print(x)
 
 myfunc()
+# The local variable can be accessed from a function within the function:
+
+def myfunc():
+  x = 300
+  def myinnerfunc():
+    print(x)
+  myinnerfunc()
+
+myfunc()
+"""# Global Scope
+A variable created in the main body of the Python code is a global variable and belongs to the global scope.
+
+Global variables are available from within any scope, global and local.
+"""
+x = 300
+
+def myfunc():
+  print(x)
+
+myfunc()
+
+print(x)
