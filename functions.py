@@ -276,4 +276,30 @@ def student_info(**kwargs):
         print(key, ":", value)
 student_info(name="Vinaya", age=20, course="DS")
 
-# 
+# Average of unlimited numbers
+def average(*nums):
+    return sum(nums) / len(nums)
+print(average(10,20,30,40))
+
+# Count positive & negative numbers
+def count_numbers(*nums):
+    pos=neg=0
+    for n in nums:
+        if n>=0:
+            pos += 1
+        else:
+            neg += 1
+    return pos, neg
+print(count_numbers(5,-2,3,-1,0))
+
+# Remove duplicates
+def unique_values(*nums):
+    return list(set(nums))
+print(unique_values(1,2,2,3,4,4,5))
+
+# Second largest number
+def second_largest(*nums):
+    nums = list(set(nums))
+    nums.sort()
+    return nums[-2]
+print(second_largest(10,20,5,8,20))
