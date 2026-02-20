@@ -256,3 +256,8 @@ def add_numbers(*args):
         total += num
     return total
 print(add_numbers(1,2,3,4,5))
+
+# Find Maximum from many numbers
+def find_max(*nums):
+    return max(nums)
+print(find_max(3,8,2,10,5))
