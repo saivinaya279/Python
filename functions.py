@@ -234,3 +234,11 @@ print(x)
 def add(a, b):
     return a + b
 print(add(5, 3))
+
+# Even or Odd function
+def check_even(n):
+    if n % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+print(check_even(7))
