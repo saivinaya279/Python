@@ -242,3 +242,9 @@ def check_even(n):
     else:
         return "Odd"
 print(check_even(7))
+
+# Greeting Function
+def greet(name="Guest"):
+    print("Hello", name)
+greet()
+greet("Vinaya")
