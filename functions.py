@@ -269,3 +269,9 @@ def multiply(*nums):
         result *= i
     return result
 print(multiply(2,3,4))
+
+# Print Student Details
+def student_info(**kwargs):
+    for key, value in kwargs.items():
+        print(key, ":", value)
+student_info(name="Vinaya", age=20, course="DS")
