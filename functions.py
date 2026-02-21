@@ -261,3 +261,11 @@ print(add_numbers(1,2,3,4,5))
 def find_max(*nums):
     return max(nums)
 print(find_max(3,8,2,10,5))
+
+# Multiply all numbers
+def multiply(*nums):
+    result = 1
+    for i in nums:
+        result *= i
+    return result
+print(multiply(2,3,4))
