@@ -297,9 +297,3 @@ def unique_values(*nums):
     return list(set(nums))
 print(unique_values(1,2,2,3,4,4,5))
 
-# Second largest number
-def second_largest(*nums):
-    nums = list(set(nums))
-    nums.sort()
-    return nums[-2]
-print(second_largest(10,20,5,8,20))
