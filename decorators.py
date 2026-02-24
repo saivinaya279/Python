@@ -48,3 +48,18 @@ def decorator_name(func):
 @decorator_name
 def my_function():
     print("Hello")
+import time
+
+def timer(func):
+    def wrapper():
+        start = time.time()
+        func()
+        end = time.time()
+        print("Time:", end - start)
+    return wrapper
+@timer
+def slow():
+    time.sleep(2)
+    print("Done")
+
+slow()
