@@ -64,3 +64,13 @@ def slow():
 
 slow()
 # Arguments in the Decorated Function
+def changecase(func):
+  def myinner(x):
+    return func(x).upper()
+  return myinner
+
+@changecase
+def myfunction(nam):
+  return "Hello " + nam
+
+print(myfunction("John"))
