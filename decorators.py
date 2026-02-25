@@ -33,3 +33,18 @@ def greet():
     print("Hello")
 greet()
 # We create a wrapper function
+"""We want:
+
+Function started
+Hello
+Function ended"""
+def decorator_name(func):
+    def wrapper():
+        # extra work before
+        print("Function started")
+        func()
+        # extra work after
+    return wrapper
+@decorator_name
+def my_function():
+    print("Hello")
