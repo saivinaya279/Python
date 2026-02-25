@@ -63,3 +63,4 @@ def slow():
     print("Done")
 
 slow()
+# Arguments in the Decorated Function
