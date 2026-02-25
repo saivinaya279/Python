@@ -75,3 +75,7 @@ def myfunction(nam):
 
 print(myfunction("John"))
 # Preserving Function Metadata
+def myfunction():
+  return "Have a great day!"
+
+print(myfunction.__name__)
