@@ -33,8 +33,3 @@ def greet():
     print("Hello")
 greet()
 # We create a wrapper function
-"""We want:
-
-Function started
-Hello
-Function ended"""
