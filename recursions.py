@@ -12,3 +12,24 @@ def countdown(n):
     countdown(n - 1)
 
 countdown(5)
+"""Basic Recursion Structure
+
+Base case
+
+Recursive call
+
+Stack memory understanding"""
+def print_n(n):
+    if n == 0:
+        return
+    print_n(n-1)
+    print(n)
+
+print_n(5)
+# fib
+def fib(n):
+    if n <= 1:
+        return n
+    return fib(n-1) + fib(n-2)
+
+print(fib(5))
