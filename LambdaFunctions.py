@@ -10,3 +10,12 @@ check = lambda x: "Positive" if x > 0 else "Negative" if x < 0 else "Zero"
 print(check(5))   
 print(check(-3))  
 print(check(0))
+"""checks divisibility by 2 and returns "Even" or "Odd" accordingly.
+
+"""
+
+
+
+check = lambda x: "Even" if x % 2 == 0 else "Odd"
+print(check(4))  
+print(check(7))
