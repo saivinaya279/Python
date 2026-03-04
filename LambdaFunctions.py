@@ -29,3 +29,11 @@ for i in func:
 calc = lambda x, y: (x + y, x * y)
 res = calc(3, 4)
 print(res)
+# Using with filter()
+# filter() function uses a lambda expression to select elements from a list that satisfy a given condition, such as keeping only even numbers.
+c = [1, 2, 3, 4, 5, 6]
+even = filter(lambda x: x % 2 == 0, c)
+print(list(even))
+
+
+
