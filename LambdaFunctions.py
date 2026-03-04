@@ -19,3 +19,8 @@ print(check(0))
 check = lambda x: "Even" if x % 2 == 0 else "Odd"
 print(check(4))  
 print(check(7))
+"""Using with List Comprehension
+Lambda functions can be combined with list comprehensions to apply the same operation to multiple values in a compact way."""
+func = [lambda arg=x: arg * 10 for x in range(1, 5)]
+for i in func:
+    print(i())
