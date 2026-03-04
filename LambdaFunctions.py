@@ -24,3 +24,5 @@ Lambda functions can be combined with list comprehensions to apply the same oper
 func = [lambda arg=x: arg * 10 for x in range(1, 5)]
 for i in func:
     print(i())
+# Using for Returning Multiple Results
+"""Although a lambda can contain only one expression, it can still return multiple results by combining them into a tuple."""
