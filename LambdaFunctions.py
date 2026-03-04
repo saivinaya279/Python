@@ -26,3 +26,6 @@ for i in func:
     print(i())
 # Using for Returning Multiple Results
 """Although a lambda can contain only one expression, it can still return multiple results by combining them into a tuple."""
+calc = lambda x, y: (x + y, x * y)
+res = calc(3, 4)
+print(res)
