@@ -38,4 +38,8 @@ print(list(even))
 a = [1, 2, 3, 4]
 double = map(lambda x: x * 2, a)
 print(list(double))
+"""[2, 4, 6, 8]
+Explanation:
 
+The lambda function doubles each number.
+map() iterates through a and applies the transformation."""
