@@ -62,3 +62,27 @@ b = [4, 5, 6]
 result = list(map(lambda x, y: x + y, a, b))
 
 print(result)
+# Multiply by 10
+nums = [2, 3, 4, 5]
+
+result = list(map(lambda x: x * 10, nums))
+
+print(result)
+# # Even numbers
+nums = [1,2,3,4,5,6,7,8,9]
+
+even = list(filter(lambda x: x % 2 == 0, nums))
+
+print(even)
+# Numbers > 3
+nums = [10,25,30,45,50]
+
+result = list(filter(lambda x: x > 30, nums))
+
+print(result)
+# Descending order
+nums = [5,2,8,1,9]
+
+result = sorted(nums, key=lambda x: -x)
+
+print(result)
