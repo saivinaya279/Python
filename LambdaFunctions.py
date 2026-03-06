@@ -43,3 +43,22 @@ Explanation:
 
 The lambda function doubles each number.
 map() iterates through a and applies the transformation."""
+# Square of numbers
+nums = [1, 2, 3, 4, 5]
+
+result = list(map(lambda x: x**2, nums))
+
+print(result)
+# Convert to uppercase
+words = ["apple", "banana", "mango"]
+
+upper_words = list(map(lambda x: x.upper(), words))
+
+print(upper_words)
+# Add two lists
+a = [1, 2, 3]
+b = [4, 5, 6]
+
+result = list(map(lambda x, y: x + y, a, b))
+
+print(result)
