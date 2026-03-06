@@ -69,4 +69,3 @@ def changecase(func):
     return func(x).upper()
   return myinner
 
-
