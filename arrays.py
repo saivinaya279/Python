@@ -85,4 +85,37 @@ Constraint:
 Do NOT use arr[::-1]
 
 Use two pointers."""
-        
+arr=list(map(int,input().split()))
+left=0
+right =len(arr)-1
+while left<right:
+    arr[left],arr[right]=arr[right],arr[left]
+    left += 1
+    right -= 1
+print(arr)
+"""Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
+
+ 
+
+Example 1:
+
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1]."""
+arr=list(map(int,input().split()))
+target=int(input())
+left=0
+right=len(arr)-1
+while left<right:
+    total=arr[left]+arr[right]
+    if total==target:
+        print([left,right])
+        break
+    elif total<target:
+        left+=1
+    else:
+        right-=1
