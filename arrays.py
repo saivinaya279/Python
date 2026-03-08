@@ -106,16 +106,3 @@ Example 1:
 Input: nums = [2,7,11,15], target = 9
 Output: [0,1]
 Explanation: Because nums[0] + nums[1] == 9, we return [0, 1]."""
-arr=list(map(int,input().split()))
-target=int(input())
-left=0
-right=len(arr)-1
-while left<right:
-    total=arr[left]+arr[right]
-    if total==target:
-        print([left,right])
-        break
-    elif total<target:
-        left+=1
-    else:
-        right-=1
