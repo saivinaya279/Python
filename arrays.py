@@ -107,6 +107,7 @@ Input: nums = [2,7,11,15], target = 9
 Output: [0,1]
 Explanation: Because nums[0] + nums[1] == 9, we return [0, 1]."""
 
+<<<<<<< HEAD
 # Move elements one position to the left
 arr = [1,2,3,4,5]
 first = arr[0]
@@ -122,3 +123,18 @@ for i in range(len(arr)-1,0,-1):
     arr[i] = arr[i-1]
 arr[0] = last
 print(arr)
+=======
+
+# Second Largest Element in Array
+def second_largest(arr):
+    first = second = -1
+    for num in arr:
+        if num > first:
+            second = first
+            first = num
+        elif num > second and num != first:
+            second = num
+    return second
+arr = [10,5,20,8]
+print(second_largest(arr))
+>>>>>>> eee4155 (message)
