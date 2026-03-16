@@ -153,4 +153,15 @@ for i in range(len(arr)-1,-1,-1):
         j-=1
 print(arr)
 
-# move to left 
+# move to negative elements to left
+# Move negatives to left
+arr = [1,-2,3,-4,5,-6]
+
+j = 0   # position for next negative number
+
+for i in range(len(arr)):
+    if arr[i] < 0:
+        arr[i], arr[j] = arr[j], arr[i]
+        j += 1
+
+print(arr)
