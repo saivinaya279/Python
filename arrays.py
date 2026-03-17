@@ -135,10 +135,21 @@ def second_largest(arr):
     return second
 arr = [10,5,20,8]
 print(second_largest(arr))
+
 a = [1,2,3,4]
 b = [3,4,5,6]
 
 for i in a:
     if i in b:
         print(i)
+
+
+# move zeros to end
+arr=list(map(int,input().split()))
+j=len(arr)-1
+for i in range(len(arr)-1,-1,-1):
+    if arr[i]!=0:
+        arr[j],arr[i]=arr[i],arr[j]
+        j-=1
+print(arr)
 
