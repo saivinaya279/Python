@@ -163,5 +163,17 @@ for i in range(len(arr)):
     if arr[i] < 0:
         arr[i], arr[j] = arr[j], arr[i]
         j += 1
-
 print(arr)
+a=[1,2,3,5]
+arr_sorted=True
+
+for i in range(1,len(a)):
+    print(a[i],(a[i-1]))
+    print(i,i-1)
+    if a[i]<a[i-1]:
+        arr_sorted=False
+        break
+if arr_sorted:
+    print("sorted")
+else:
+    print("not sorted")
