@@ -135,4 +135,10 @@ def second_largest(arr):
     return second
 arr = [10,5,20,8]
 print(second_largest(arr))
+a = [1,2,3,4]
+b = [3,4,5,6]
+
+for i in a:
+    if i in b:
+        print(i)
 
