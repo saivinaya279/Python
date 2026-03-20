@@ -1,0 +1,131 @@
+Arguments=values passed to a function
+def add(a,b):
+    return a+b
+add(5,3)
+a,b->parameters 
+5,3->arguments
+# 1 Positional Arguments:
+Positional arguments are arguments passed to a function in the same order as the function parameters. 
+The value is assigned based on position.
+Example:
+
+##function##
+
+.#def function(parameter1, parameter2):
+    pass
+##call##
+function(argument1, argument2)
+def student(name,age):
+    print(name,age)
+student("vinaya",20)
+
+"""important points"""
+Order must match.
+Use when:
+    -Few parameters
+    -Order obvious
+    -Simple functions
+*Positional = Position decides meaning*
+2.Keyword Arguments:
+Memory trick: "Form filling with labels"
+"""scenario"""
+Name: Sai
+Age: 21
+
+Order doesn't matter because labels exist.
+
+DEFINATION:
+
+Keyword arguments are arguments passed using parameter names,
+ where values are assigned based on keywords instead of position.
+/SYNTAX 
+Function(parameter=value)
+
+def student(name, age):
+    print(name, age)
+
+student(age=21, name="Sai")
+Key rule
+
+"""Order not important."""
+
+But:
+
+Positional must come first:
+
+#Correct:
+
+fun(10,b=20)
+
+#Wrong:
+
+fun(a=10,20)
+When to use
+
+Use when:
+
+Many parameters
+Improve readability
+Avoid mistakes
+Real world APIs
+///3.Default Arguments:
+Scenario (memory)
+
+Mobile settings:
+
+Default brightness = 50
+
+If user doesn't change → use default.
+DEFINATION:
+
+Default arguments are parameters that take a default value if no argument is provided during function call.
+/SYNTAX:
+def function(parameter=value):
+# Example:
+
+def student(name, age=20):
+    print(name, age)
+
+student("Sai")
+student("Sai",25)
+Default parameters must be last.
+
+Correct:
+
+def fun(a,b=10):
+
+Wrong:
+
+def fun(a=10,b):
+
+TYPE 4 — Variable arguments (*args)
+
+(Memory trick: "Unlimited positional inputs")
+Normal function:
+
+def add(a,b):
+
+Only 2 values allowed.
+
+What if user sends 10?
+Use *args:
+
+def add(*numbers):
+    print(numbers)
+
+Call:
+
+add(1,2,3,4,5)
+/*"args = Unlimited positional inputs"
+DEFINATION:
+*args allows a function to accept any number of positional arguments. These arguments are stored as a tuple.
+Key rule
+
+*args stores values in tuple
+When to use
+
+Use when:
+
+Number of inputs unknown
+Mathematical operations
+Flexible APIs
