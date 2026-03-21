@@ -196,3 +196,11 @@ def count_pairs(n):
 
 n = 9
 print(count_pairs(n))
+
+def uglynum(n):
+    for i in range(1,n+1):
+        if n//2==0 and n3!=0 or n%5!=0:
+            return "false"
+        return "true"
+n=int(input())
+print(uglynum(n))
