@@ -212,3 +212,15 @@ for sentence in sentences:
     if word_count > max_words:
         max_words = word_count
 print(max_words)
+s=input()
+words=s.split()
+counted=[]
+for i in range(len(words)):
+    word=words[i]
+    if word not in counted:
+        count=0
+        for j in range(len(words)):
+            if words[j]==word:
+                count+=1
+        print( f"{word} ,{count}")
+        counted.append(word)
