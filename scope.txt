@@ -1,0 +1,76 @@
+"""Scope = Where a variable can be accessed"
+/Three main types of Scope
+
+Python mainly uses:
+
+1 Local scope
+2 Global scope
+3 Nonlocal scope (advanced)
+1.local Scope
+"""Programming definition (for notes)
+
+A variable created inside a function is called a local variable 
+and can only be accessed inside that function."""
+def fun():
+
+    x = 10   # local variable
+
+    print(x)
+
+fun()
+Important rule
+
+Local variable cannot be accessed outside.
+//Why?
+
+Because x exists only inside function.
+
+Memory line:
+
+Local = Inside function only
+//2️⃣ Global Scope
+A variable declared outside all functions is called 
+a global variable and can be accessed anywhere in the program.
+x = 50   # global
+
+def fun():
+
+    print(x)
+
+fun()
+"""x = 10
+
+def fun():
+
+    x = 20
+
+fun()
+
+print(x)"""
+this will get error
+Why?
+
+Because Python created a new local variable.
+
+Memory rule:
+
+Assignment inside function → Python assumes local
+
+Very important rule.
+////How to modify global variable
+
+Use keyword:
+
+global
+"""x = 10
+
+def fun():
+
+    global x
+
+    x = 20
+
+fun()
+
+print(x)"""
+//global keyword = I want original variable
