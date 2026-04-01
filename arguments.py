@@ -115,3 +115,45 @@ def find_max(*numbers):
 
     return larg
 print(find_max())
+# Practice Problem 4 (**kwargs)
+"""
+Create:
+
+user_profile(**details)
+
+Example call:
+
+user_profile(name="Vinaya",age=20,city="Vizag")
+
+Output:
+
+name : Vinaya
+age : 20
+city : Vizag"""
+# 
+def user_profile(**details):
+    for key,value in details.items():
+        print(key,":",value)
+print(user_profile(name="vinaya",age="20",city="vizag"))
+# Handle empty input:
+
+def user_profile(**details):
+
+    if not details:
+        print("No data provided")
+        return
+
+    for key,value in details.items():
+
+        print(f"{key} : {value}")
+print(user_profile())
+print(user_profile(name="vinaya",age="20",city="vizag"))
+
+# This shows maturity in coding.
+# Final Practice Problem 5
+def order_system(customer,item="pen",*extra,**details):
+    print("customer:",customer)
+    print("Item:",item)
+    print("Extras:",extra)
+    print("details:",details)
+order_system("sai","Bag","Bottle",Payment="Upi",city="vizag")

@@ -129,3 +129,65 @@ Use when:
 Number of inputs unknown
 Mathematical operations
 Flexible APIs
+///TYPE 5 — Variable keyword arguments (**kwargs)
+
+(Memory trick: "Unlimited labeled inputs")
+
+Example:
+
+User profile:
+
+Name
+Age
+City
+Phone
+Email
+
+Unknown fields.
+
+Use **kwargs:
+Example:
+
+def profile(**data):
+    print(data)
+
+Call:
+
+profile(name="Sai",age=21,city="Vizag")
+
+Output:
+
+{'name':'Sai','age':21,'city':'Vizag'}
+
+Python converts into dictionary.
+Memory line:
+
+**"kwargs = Unlimited keyword inputs"
+*args->tuples
+**kwgrs->dictionary
+bcz:
+*args->collects values
+**kwargs->collects key-value pairs
+Programming definition
+
+**kwargs allows a function to accept any number of keyword arguments. These arguments are stored as a dictionary.
+Key rule
+
+**kwargs stores values in dictionary.
+
+Example:
+
+def fun(**x):
+    print(type(x))
+
+Output:
+
+<class 'dict'>
+When to use
+
+Use when:
+
+Dynamic data
+Forms
+User profiles
+API data
