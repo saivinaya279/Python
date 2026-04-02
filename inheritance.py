@@ -41,3 +41,4 @@ class Car(Vehicle):
 
 c = Car()
 c.start()
+# Call both parent and child methods.
