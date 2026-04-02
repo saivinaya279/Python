@@ -30,3 +30,14 @@ s = Student("Ravi",20,45)
 print(s.name)
 print(s.age)
 print(s.roll)
+# Override parent method.
+class Vehicle:
+    def start(self):
+        print("Vehicle starts")
+
+class Car(Vehicle):
+    def start(self):
+        print("Car starts with key")
+
+c = Car()
+c.start()
