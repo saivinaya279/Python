@@ -42,3 +42,15 @@ class Car(Vehicle):
 c = Car()
 c.start()
 # Call both parent and child methods.
+class Shape:
+    def display(self):
+        print("This is shape")
+
+class Circle(Shape):
+    def show(self):
+        print("This is circle")
+
+c = Circle()
+
+c.display()
+c.show()
