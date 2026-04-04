@@ -54,3 +54,18 @@ c = Circle()
 
 c.display()
 c.show()
+"""Create a parent class Animal and child class Dog
+
+Program:
+"""
+class Animal:
+    def eat(self):
+        print("Animal is eating")
+
+class Dog(Animal):
+    def bark(self):
+        print("Dog is barking")
+
+d = Dog()
+d.eat()
+d.bark()
