@@ -112,3 +112,24 @@ d.bark()
 
 c.eat()
 c.meow()
+"""Abstract class example
+
+Python uses ABC module.
+
+Program:"""
+
+from abc import ABC, abstractmethod
+
+class Vehicle(ABC):
+
+    @abstractmethod
+    def start(self):
+        pass
+
+class Car(Vehicle):
+
+    def start(self):
+        print("Car starts with key")
+
+c = Car()
+c.start()
