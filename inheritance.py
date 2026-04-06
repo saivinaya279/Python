@@ -88,3 +88,27 @@ p = Puppy()
 p.eat()
 p.bark()
 p.weep()
+"""Hierarchical inheritance
+
+Program:"""
+
+class Animal:
+    def eat(self):
+        print("Eating")
+
+class Dog(Animal):
+    def bark(self):
+        print("Bark")
+
+class Cat(Animal):
+    def meow(self):
+        print("Meow")
+
+d = Dog()
+c = Cat()
+
+d.eat()
+d.bark()
+
+c.eat()
+c.meow()
