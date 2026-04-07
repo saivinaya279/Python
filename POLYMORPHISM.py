@@ -24,3 +24,13 @@ class Dog(Animal):
 d = Dog()
 
 d.sound()
+# Inheritance one:
+class A:
+    def msg(self):
+        print("Hello")
+
+class B(A):
+    pass
+
+b = B()
+b.msg()
