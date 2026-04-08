@@ -45,3 +45,22 @@ class B(A):
 
 obj = B()
 obj.show()
+"""# Abstraction (Simple program)
+
+Question: Write a Python program using abstraction."""
+
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+
+    @abstractmethod
+    def area(self):
+        pass
+
+class Square(Shape):
+
+    def area(self):
+        print("Area calculated")
+
+obj = Square()
+obj.area()
