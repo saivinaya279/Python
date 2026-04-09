@@ -64,3 +64,13 @@ class Square(Shape):
 
 obj = Square()
 obj.area()
+"""Function Polymorphism (Same function, different data)
+📌 Problem:
+
+Add numbers or strings"""
+
+def add(a, b):
+    return a + b
+
+print(add(2, 3))        # numbers
+print(add("Hi ", "You"))  # strings
