@@ -72,5 +72,27 @@ Add numbers or strings"""
 def add(a, b):
     return a + b
 
-print(add(2, 3))        # numbers
-print(add("Hi ", "You"))  # strings
+print(add(2, 3))        
+print(add("Hi ", "You"))  
+"""Real-Life Style Problem (Very Important for Interviews)
+📌 Problem:
+
+Different payment methods"""
+
+class Payment:
+    def pay(self):
+        print("Processing payment")
+
+class UPI(Payment):
+    def pay(self):
+        print("Paid using UPI")
+
+class Card(Payment):
+    def pay(self):
+        print("Paid using Card")
+
+# polymorphism
+payments = [UPI(), Card()]
+
+for p in payments:
+    p.pay()
