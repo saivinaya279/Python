@@ -6,7 +6,7 @@ class Car:
 
 c1 = Car("BMW", 5000000)
 print(c1.brand, c1.price)
-Add method to display details
+# Add method to display details
 class Student:
     def __init__(self, name):
         self.name = name
