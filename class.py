@@ -16,3 +16,11 @@ class Student:
 
 s = Student("Sai")
 s.display()
+# Create multiple objects
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+p1 = Person("A")
+p2 = Person("B")
+print(p1.name, p2.name)
