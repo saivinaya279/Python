@@ -24,3 +24,11 @@ class Person:
 p1 = Person("A")
 p2 = Person("B")
 print(p1.name, p2.name)
+# Modify object attribute
+class Dog:
+    def __init__(self, name):
+        self.name = name
+
+d = Dog("Tom")
+d.name = "Jerry"
+print(d.name)
