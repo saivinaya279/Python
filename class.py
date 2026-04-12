@@ -32,3 +32,11 @@ class Dog:
 d = Dog("Tom")
 d.name = "Jerry"
 print(d.name)
+# Class with default value
+class Employee:
+    def __init__(self, name, salary=10000):
+        self.name = name
+        self.salary = salary
+
+e = Employee("Ram")
+print(e.salary)
