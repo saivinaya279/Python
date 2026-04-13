@@ -155,3 +155,13 @@ class Square(Shape):
 
 s = Square(5)
 s.area()
+Simple inheritance
+class Parent:
+    def show(self):
+        print("Parent")
+
+class Child(Parent):
+    pass
+
+c = Child()
+c.show()
