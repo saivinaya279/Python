@@ -40,3 +40,13 @@ class Employee:
 
 e = Employee("Ram")
 print(e.salary)
+# Print object info using method
+class Book:
+    def __init__(self, title):
+        self.title = title
+
+    def show(self):
+        print(self.title)
+
+b = Book("Python")
+b.show()
