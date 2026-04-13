@@ -155,7 +155,7 @@ class Square(Shape):
 
 s = Square(5)
 s.area()
-Simple inheritance
+# Simple inheritance
 class Parent:
     def show(self):
         print("Parent")
