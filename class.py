@@ -50,3 +50,12 @@ class Book:
 
 b = Book("Python")
 b.show()
+# Store multiple objects in list
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+students = [Student("A"), Student("B")]
+
+for s in students:
+    print(s.name)
