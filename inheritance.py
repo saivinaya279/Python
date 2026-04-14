@@ -165,3 +165,11 @@ class Child(Parent):
 
 c = Child()
 c.show()
+# Add child method
+class Parent:
+    def show(self):
+        print("Parent")
+
+class Child(Parent):
+    def display(self):
+        print("Child")
