@@ -173,3 +173,12 @@ class Parent:
 class Child(Parent):
     def display(self):
         print("Child")
+Constructor inheritance
+class A:
+    def __init__(self):
+        print("A")
+
+class B(A):
+    pass
+
+b = B()
