@@ -182,7 +182,7 @@ class B(A):
     pass
 
 b = B()
-Use super()
+# Use super()
 class A:
     def __init__(self):
         print("A")
