@@ -191,3 +191,13 @@ class B(A):
     def __init__(self):
         super().__init__()
         print("B")
+# Multilevel inheritance
+class A:
+    def show(self):
+        print("A")
+
+class B(A):
+    pass
+
+class C(B):
+    pass
