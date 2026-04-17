@@ -1,4 +1,4 @@
-# Create class Car with attributes
+""""# Create class Car with attributes
 class Car:
     def __init__(self, brand, price):
         self.brand = brand
@@ -58,4 +58,58 @@ class Student:
 students = [Student("A"), Student("B")]
 
 for s in students:
-    print(s.name)
+    print(s.name)"""
+"""
+class Dog:
+    def __init__(self,name):
+        self.name=name
+    def bark(self):
+        print(self.name,"is barking")
+d1=Dog("tommy")
+d2=Dog("leo") 
+d1.bark()
+d2.bark()
+ class A:
+    def show(self):
+        print("Hello")
+
+A.show()
+class A:
+    def show(self):
+        print("Hello")
+
+a1 = A()
+A.show(a1)"""
+class Student:
+    def __init__(self,name):
+        self.name=name
+    def display(self):
+        print("name",self.name)
+s1=Student("ram")
+s1.display()
+class Car:
+    def __init__(self,brand):
+        self.brand=brand
+    def show(self):
+        print("The Car Brand Name is ",self.brand)
+c1=Car("BMW")
+c1.show()
+c2=Car("Honda")
+c2.show()
+class Dog:
+    def __init__(self,name):
+        self.name=name
+    def bark(self):
+        print(f"{self.name} is barking")
+d1=Dog("Tommy")
+d1.bark()
+"""Mobile Class
+Store price
+Method show_price()"""
+class Mobile:
+    def __init__(self,price):
+        self.price=price
+    def show_price(self):
+        print("The Price of the Mobile",self.price)
+p1=Mobile(20000)
+p1.show_price()
