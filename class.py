@@ -113,3 +113,45 @@ class Mobile:
         print("The Price of the Mobile",self.price)
 p1=Mobile(20000)
 p1.show_price()
+"""5️⃣ Book Class
+Store title
+Method read() → print "Reading <title>"
+"""
+class Book:
+    def __init__(self,title):
+        self.title=title
+    def read(self):
+        print(f"Reading {self.title}")
+B1=Book("The Love Story ")
+B1.read()
+        
+"""
+🔹 INTERMEDIATE (Understand self properly)
+6️⃣ Person Class
+Store name, age
+Method show_details() → print both
+7️⃣ Laptop Class
+Store brand, ram
+Method display() → print details
+🔹 LOGIC BASED (IMPORTANT)
+8️⃣ Bank System (VERY IMPORTANT)
+
+Create class Bank:
+
+balance
+Method deposit(amount)
+Method withdraw(amount)
+Method show_balance()
+
+👉 Test:
+
+deposit
+withdraw
+print balance
+9️⃣ Student Marks
+
+Create class Student:
+
+name, marks1, marks2
+Method total()
+Method average()"""
