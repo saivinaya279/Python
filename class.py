@@ -150,8 +150,3 @@ withdraw
 print balance
 9️⃣ Student Marks
 
-Create class Student:
-
-name, marks1, marks2
-Method total()
-Method average()"""
