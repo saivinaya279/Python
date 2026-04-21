@@ -61,9 +61,33 @@ deposit()
 withdraw()
 
 show_balance()
-
-
 """
+class Bank:
+    
+    def __init__(self):
+        self.__balance = 0   
+
+    def deposit(self, amount):
+        self.__balance = amount
+
+    def withdraw(self, amount):
+        self.__balance = amount
+
+    def show_balance(self):
+        print("Balance:", self.__balance)
+
+
+# Create object
+b = Bank()
+
+b.deposit(1000)
+b.show_balance()
+
+b.withdraw(500)
+b.show_balance()
+
+
+
 """Question 4 — Inheritance
 
 Create Parent Class:
@@ -123,17 +147,47 @@ C=Cat()
 D.sound()
 C.sound()
 """"""
-class Test:
+"""Question 1 — Student Management
+
+Create class:
+
+Student
+
+Attributes:
+
+name
+
+marks
+
+Method:
+
+grade()
+
+If marks > 50 → Pass
+Else → Fail
+
+---
+"""
+class Student:
     
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    def grade(self):
+        if self.marks > 50:
+            print(self.name, "Pass")
+        else:
+            print(self.name, "Fail")
+
+
+s1 = Student("Sai", 60)
+s2 = Student("vinaya", 40)
+
+s1.grade()
+s2.grade()
+class Test:
     def __init__(self):
         print("Constructor called")
 
 t = Test()
-
-
-class Student:
-    def __init__(self, name):
-        self.name = name
-
-s = Student("Ravi")
-print(s.name)
