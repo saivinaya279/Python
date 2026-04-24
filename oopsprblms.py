@@ -136,3 +136,16 @@ class Student:
 
 s1 = Student("Sai", 80, 75, 90)
 s1.display()
+"""2. Bank Account System
+Question
+
+Create a BankAccount class with:
+
+account holder
+balance
+
+Methods:
+
+deposit()
+withdraw()
+display_balance()"""
