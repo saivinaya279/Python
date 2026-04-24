@@ -106,3 +106,33 @@ r=Circle()
 c=Rectangle()
 c.draw()
 r.draw()
+"""8. Student Class with Average Marks
+Question
+
+Create a class Student with:
+
+name
+marks in 3 subjects
+
+Add methods to:
+
+calculate average
+display details
+Code"""
+class Student:
+    def __init__(self, name, m1, m2, m3):
+        self.name = name
+        self.m1 = m1
+        self.m2 = m2
+        self.m3 = m3
+
+    def average(self):
+        return (self.m1 + self.m2 + self.m3) / 3
+
+    def display(self):
+        print("Name:", self.name)
+        print("Average:", self.average())
+
+
+s1 = Student("Sai", 80, 75, 90)
+s1.display()
