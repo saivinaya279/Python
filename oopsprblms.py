@@ -149,3 +149,28 @@ Methods:
 deposit()
 withdraw()
 display_balance()"""
+class BankAccount:
+    def __init__(self, name, balance):
+        self.name = name
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        print(amount, "deposited")
+
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance -= amount
+            print(amount, "withdrawn")
+        else:
+            print("Insufficient balance")
+
+    def display_balance(self):
+        print("Current Balance:", self.balance)
+
+
+a1 = BankAccount("Vinaya", 5000)
+
+a1.deposit(2000)
+a1.withdraw(3000)
+a1.display_balance()
