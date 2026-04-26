@@ -174,3 +174,12 @@ a1 = BankAccount("Vinaya", 5000)
 a1.deposit(2000)
 a1.withdraw(3000)
 a1.display_balance()
+"""3. Inheritance Example (Employee & Manager)
+Question
+
+Create:
+
+Parent class → Employee
+Child class → Manager
+
+Manager should inherit employee details and add department."""
