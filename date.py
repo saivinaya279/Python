@@ -36,4 +36,9 @@ print(x.strftime("%A"))  # Day name
 # Date difference (important in data analysis)
 import datetime
 
+d1 = datetime.date(2025,5,1)
+d2 = datetime.date(2025,5,10)
 
+diff = d2 - d1
+
+print(diff.days)
