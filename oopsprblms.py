@@ -183,3 +183,25 @@ Parent class → Employee
 Child class → Manager
 
 Manager should inherit employee details and add department."""
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+    def show(self):
+        print("Name:", self.name)
+        print("Salary:", self.salary)
+
+
+class Manager(Employee):
+    def __init__(self, name, salary, department):
+        super().__init__(name, salary)
+        self.department = department
+
+    def display(self):
+        self.show()
+        print("Department:", self.department)
+
+
+m1 = Manager("Rahul", 60000, "IT")
+m1.display()
