@@ -502,3 +502,12 @@ num = 36
 for i in range(1, num+1):
     if num % i == 0:
         print(i, end=" ")
+# 
+n = int(input())
+count = 0
+
+while n > 0:
+    n = n // 10
+    count += 1
+
+print(count)
