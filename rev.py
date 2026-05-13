@@ -497,13 +497,7 @@ for i in lst:
 max_key = max(freq, key=freq.get)
 print(max_key)
 # 8. Find All Divisors
-num = 36
 
-for i in range(1, num+1):
-    if num % i == 0:
-        print(i, end=" ")
-# 
-n = int(input())
 count = 0
 
 while n > 0:
