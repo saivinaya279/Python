@@ -498,10 +498,3 @@ max_key = max(freq, key=freq.get)
 print(max_key)
 # 8. Find All Divisors
 
-count = 0
-
-while n > 0:
-    n = n // 10
-    count += 1
-
-print(count)
