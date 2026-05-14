@@ -513,3 +513,22 @@ while left<right:
     left+=1
     right-=1
 print(n)
+"""Problem 4 — Reverse array using extra space
+
+Input:
+
+[1,2,3,4]
+
+Output:
+
+[4,3,2,1]
+
+Concept:
+
+reverse traversal
+extra array"""
+arr_1=list(map(int,input().split()))
+arr_new=[]
+for i in range(len(arr_1)-1,-1,-1):
+    arr_new.append(arr_1[i])
+print(arr_new)
