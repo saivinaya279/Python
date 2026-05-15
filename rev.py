@@ -532,3 +532,28 @@ arr_new=[]
 for i in range(len(arr_1)-1,-1,-1):
     arr_new.append(arr_1[i])
 print(arr_new)
+"""Problem 5 — Reverse array in-place
+
+Input:
+
+[1,2,3,4,5]
+
+Output:
+
+[5,4,3,2,1]
+
+Concept:
+
+two pointers
+swapping
+stop condition
+
+VERY important."""
+# arr=list(map(int,input().split()))
+# left=0
+# right=len(arr)-1
+# while left<right:
+#     arr[left],arr[right]=arr[right],arr[left]
+#     left+=1
+#     right-=1
+# print(arr)
