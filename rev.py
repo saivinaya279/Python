@@ -557,27 +557,3 @@ while left<right:
     left+=1
     right-=1
 print(arr)
-"""Problem 6 — Reverse only first half
-
-Example:
-
-[1,2,3,4,5,6]
-
-Reverse first half:
-
-[3,2,1,4,5,6]
-
-Concept:
-
-custom pointer range
-
-Good logic builder."""
-arr=list(map(int,input().split()))
-left=0
-right=(len(arr)//2)-1
-while left<right:
-    arr[left],arr[right]=arr[right],arr[left]
-    left+=1
-    right-=1
-print(arr)
-
