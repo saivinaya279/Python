@@ -557,3 +557,26 @@ while left<right:
     left+=1
     right-=1
 print(arr)
+"""Problem 7 — Left shift by 1
+
+Input:
+
+[10,20,30,40]
+
+Output:
+
+[20,30,40,_]
+
+Concept:
+
+forward shifting"""
+# n=list(map(int,input().split()))
+# s=n[1::]
+# s.append("_")
+# print(s)
+# # ---------------
+# arr=list(map(int,input().split()))
+# for i in range(len(arr)-1):
+#     arr[i]=arr[i+1]
+# arr[-1]="_"
+# print(arr)
