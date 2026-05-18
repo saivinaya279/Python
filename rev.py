@@ -570,13 +570,13 @@ Output:
 Concept:
 
 forward shifting"""
-# n=list(map(int,input().split()))
-# s=n[1::]
-# s.append("_")
-# print(s)
-# # ---------------
-# arr=list(map(int,input().split()))
-# for i in range(len(arr)-1):
-#     arr[i]=arr[i+1]
-# arr[-1]="_"
-# print(arr)
+n=list(map(int,input().split()))
+s=n[1::]
+s.append("_")
+print(s)
+# ---------------
+arr=list(map(int,input().split()))
+for i in range(len(arr)-1):
+    arr[i]=arr[i+1]
+arr[-1]="_"
+print(arr)
