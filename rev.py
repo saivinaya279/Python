@@ -618,3 +618,13 @@ for i in range(len(arr)-1,2,-1):
     arr[i]=arr[i-1]
 arr[2]=99
 print(arr)
+#  Electricity bill calculation
+n=int(input())
+ele=n*10
+print(ele)
+n=int(input())
+if n>=90:
+    print("Grade A")
+elif n>=80:
+    print("Grade B")
+     
