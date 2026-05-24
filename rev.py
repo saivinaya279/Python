@@ -627,4 +627,22 @@ if n>=90:
     print("Grade A")
 elif n>=80:
     print("Grade B")
-     
+
+"""nput:
+
+[10,20,30,40]
+insert 99 at index 2
+
+Output:
+
+[10,20,99,30,40]
+
+Concept:
+
+# right shifting"""
+arr=list(map(int,input().split()))
+arr_new=[]
+for i in range(len(arr)-1,2,-1):
+    arr[i]=arr[i-1]
+arr[2]=99
+print(arr)
