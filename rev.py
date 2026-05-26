@@ -640,10 +640,17 @@ Output:
 Concept:
 
 # right shifting"""
-arr=list(map(int,input().split()))
-arr_new=[]
-for i in range(len(arr)-1,2,-1):
-    arr[i]=arr[i-1]
-arr[2]=99
-print(arr)
-# 
+num = int(input("Enter a number: "))
+
+original = num
+reverse = 0
+
+while num > 0:
+    digit = num % 10
+    reverse = reverse * 10 + digit
+    num //= 10
+
+if original == reverse:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
