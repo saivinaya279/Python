@@ -644,3 +644,59 @@ num = int(input("Enter a number: "))
 
 original = num
 reverse = 0
+
+while num > 0:
+    digit = num % 10
+    reverse = reverse * 10 + digit
+    num //= 10
+
+if original == reverse:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+start = int(input("Start: "))
+end = int(input("End: "))
+text = input("Enter a string: ")
+
+freq = {}
+
+for ch in text:
+    freq[ch] = freq.get(ch, 0) + 1
+
+print(freq)
+start = 10
+end = 50
+
+for num in range(start, end + 1):
+    is_prime = True
+
+    if num < 2:
+        is_prime = False
+
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            is_prime = False
+            break
+
+    if is_prime:
+        print(num, end=" ")
+s = input("Enter string: ")
+
+freq = {}
+
+for ch in s:
+    freq[ch] = freq.get(ch, 0) + 1
+
+print(freq)
+arr = [12, 45, 67, 89, 23, 89]
+
+first = second = float('-inf')
+
+for num in arr:
+    if num > first:
+        second = first
+        first = num
+    elif num > second and num != first:
+        second = num
+
+print(second)
