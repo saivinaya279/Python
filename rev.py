@@ -718,3 +718,10 @@ for num in arr:
         result.append(num)
 
 print(result)
+s1 = input("First string: ")
+s2 = input("Second string: ")
+
+if sorted(s1.lower()) == sorted(s2.lower()):
+    print("Anagram")
+else:
+    print("Not Anagram")
