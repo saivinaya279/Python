@@ -725,3 +725,18 @@ if sorted(s1.lower()) == sorted(s2.lower()):
     print("Anagram")
 else:
     print("Not Anagram")
+num = int(input("Enter number: "))
+
+power = len(str(num))
+temp = num
+sum_val = 0
+
+while temp > 0:
+    digit = temp % 10
+    sum_val += digit ** power
+    temp //= 10
+
+if sum_val == num:
+    print("Armstrong")
+else:
+    print("Not Armstrong")
