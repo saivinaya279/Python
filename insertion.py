@@ -113,3 +113,13 @@ for i in range(1, len(arr)):
     arr[j + 1] = key
 
 print(arr)
+arr = ["cat", "apple", "dog", "ball"]
+
+n = len(arr)
+
+for i in range(n):
+    for j in range(n - i - 1):
+        if arr[j] > arr[j + 1]:
+            arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+print(arr)
