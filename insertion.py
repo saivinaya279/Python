@@ -137,27 +137,3 @@ arr = [1, 2, 3, 4, 5]
 
 swapped = False
 n = len(arr)
-
-for i in range(n):
-    for j in range(n - i - 1):
-        if arr[j] > arr[j + 1]:
-            arr[j], arr[j + 1] = arr[j + 1], arr[j]
-            swapped = True
-
-if swapped:
-    print("Not Sorted")
-else:
-    print("Already Sorted")
-arr = [5, 1, 4, 2, 8]
-
-count = 0
-n = len(arr)
-
-for i in range(n):
-    for j in range(n - i - 1):
-        if arr[j] > arr[j + 1]:
-            arr[j], arr[j + 1] = arr[j + 1], arr[j]
-            count += 1
-
-print("Swaps:", count)
-# hi
