@@ -28,3 +28,18 @@ def count_sort(arr, place):
         
     
         
+def radix_sort(arr):
+    max_ele = max(arr)
+
+    place =1
+
+    while max_ele//place>0:
+        count_sort(arr, place)
+        place*=10
+
+
+
+a = [8,6,4,9,1,2]
+b = [100, 201, 1, 810, 904, 6, 25]
+radix_sort(b)
+print(b)
