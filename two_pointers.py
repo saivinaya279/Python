@@ -43,3 +43,22 @@ if is_pal(s):
 
 else:
     print("not a palindrome")
+hts=int(input())
+n = len(hts)
+
+left = 0
+right = n-1
+max_area = 0
+
+while left<right:
+
+    area = min(hts[left], hts[right])*(right-left)
+
+    max_area = max(area, max_area)
+
+    if hts[left]<hts[right]:
+        left+=1
+    else:
+        right-=1
+
+print(max_area)
