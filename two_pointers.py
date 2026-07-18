@@ -62,3 +62,22 @@ while left<right:
         right-=1
 
 print(max_area)
+arr = list(map(int,input().split()))
+
+pref = [0]*len(arr)
+
+pref[0]= arr[0]
+
+for i in range(1,len(arr)):
+    pref[i]=pref[i-1]+arr[i]
+
+l = int(input())
+r = int(input())
+
+if l==0:
+    print(pref[r])
+
+else:
+    k = pref[r]-pref[l-1]
+
+    print(k)
