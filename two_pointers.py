@@ -81,3 +81,17 @@ else:
     k = pref[r]-pref[l-1]
 
     print(k)
+def two_sum_sorted(arr, target):
+    left, right = 0, len(arr) - 1
+
+    while left < right:
+        current_sum = arr[left] + arr[right]
+
+        if current_sum == target:
+            return (left, right)   # indices of the pair
+        elif current_sum < target:
+            left += 1              # need a larger sum
+        else:
+            right -= 1             # need a smaller sum
+
+    return None  # no pair found
