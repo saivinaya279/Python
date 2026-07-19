@@ -88,10 +88,10 @@ def two_sum_sorted(arr, target):
         current_sum = arr[left] + arr[right]
 
         if current_sum == target:
-            return (left, right)   # indices of the pair
+            return (left, right)   
         elif current_sum < target:
-            left += 1              # need a larger sum
+            left += 1              
         else:
-            right -= 1             # need a smaller sum
+            right -= 1            
 
-    return None  # no pair found
+    return None 
