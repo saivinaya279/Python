@@ -108,3 +108,19 @@ def remove_duplicates(arr):
     return slow + 1  
 
 # remove_duplicates:
+def merge_sorted_arrays(a, b):
+    i, j = 0, 0
+    result = []
+
+    while i < len(a) and j < len(b):
+        if a[i] <= b[j]:
+            result.append(a[i])
+            i += 1
+        else:
+            result.append(b[j])
+            j += 1
+
+    result.extend(a[i:])   # leftover from a (if any)
+    result.extend(b[j:])   # leftover from b (if any)
+
+    return result
