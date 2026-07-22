@@ -106,3 +106,5 @@ def remove_duplicates(arr):
             arr[slow] = arr[fast]
 
     return slow + 1  
+
+# remove_duplicates:
