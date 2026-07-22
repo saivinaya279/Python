@@ -120,7 +120,7 @@ def merge_sorted_arrays(a, b):
             result.append(b[j])
             j += 1
 
-    result.extend(a[i:])   # leftover from a (if any)
-    result.extend(b[j:])   # leftover from b (if any)
+    result.extend(a[i:])   
+    result.extend(b[j:])   
 
     return result
