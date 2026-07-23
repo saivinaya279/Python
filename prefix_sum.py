@@ -16,4 +16,4 @@ def range_sum(prefix, left, right):
 
 arr = [2, 4, 1, 5, 3]
 prefix = build_prefix_sum(arr)
-print(range_sum(prefix, 1, 3))   # 10
+print(range_sum(prefix, 1, 3))   
