@@ -31,7 +31,6 @@ def build_2d_prefix(matrix):
 
 
 def range_sum_2d(prefix, r1, c1, r2, c2):
-    # sum of matrix[r1..r2][c1..c2] inclusive
     return (prefix[r2+1][c2+1]
             - prefix[r1][c2+1]
             - prefix[r2+1][c1]
@@ -40,4 +39,4 @@ def range_sum_2d(prefix, r1, c1, r2, c2):
 
 matrix = [[1,2,3],[4,5,6],[7,8,9]]
 prefix = build_2d_prefix(matrix)
-print(range_sum_2d(prefix, 1, 1, 2, 2))   # 28
+print(range_sum_2d(prefix, 1, 1, 2, 2))   
