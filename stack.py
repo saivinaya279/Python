@@ -15,3 +15,9 @@ push(20)
 push(30)
 
 print(stack)
+stack = [10, 20, 30]
+
+if stack:
+    print("Removed:", stack.pop())
+
+print("Stack:", stack)
