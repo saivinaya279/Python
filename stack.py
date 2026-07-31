@@ -21,3 +21,9 @@ if stack:
     print("Removed:", stack.pop())
 
 print("Stack:", stack)
+stack = [10, 20, 30]
+
+if stack:
+    print("Top element:", stack[-1])
+else:
+    print("Stack is empty")
