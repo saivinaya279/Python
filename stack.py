@@ -27,3 +27,9 @@ if stack:
     print("Top element:", stack[-1])
 else:
     print("Stack is empty")
+stack = []
+
+if len(stack) == 0:
+    print("Stack is empty")
+else:
+    print("Stack is not empty")
