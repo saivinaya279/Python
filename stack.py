@@ -39,3 +39,9 @@ if len(stack) == 0:
     print("Stack is empty")
 else:
     print("Stack is not empty")
+stack = [10, 20, 30, 40]
+
+print("Stack elements:")
+
+for element in reversed(stack):
+    print(element)
