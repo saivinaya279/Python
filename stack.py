@@ -45,3 +45,9 @@ print("Stack elements:")
 
 for element in reversed(stack):
     print(element)
+stack = [10, 20, 30, 40]
+
+print("Stack elements:")
+
+for element in reversed(stack):
+    print(element)
