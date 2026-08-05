@@ -51,3 +51,9 @@ print("Stack elements:")
 
 for element in reversed(stack):
     print(element)
+stack = [10, 20, 30]
+
+new_stack = stack.copy()
+
+print("Original:", stack)
+print("Copy:", new_stack)
