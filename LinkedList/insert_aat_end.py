@@ -34,8 +34,8 @@ class LinkedList:
 
 if __name__=="__main__":
     ll=LinkedList()
-    ll.insert_at_beginning(10)
-    ll.insert_at_beginning(20)
-    ll.insert_at_beginning(20)
+    # ll.insert_at_beginning(10)
+    # ll.insert_at_beginning(20)
+    # ll.insert_at_beginning(20)
     ll.insert_at_end(30)
     ll.display()
